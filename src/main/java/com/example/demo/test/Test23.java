@@ -7,17 +7,20 @@ import cn.hutool.core.io.FileUtil;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 
+import javax.imageio.ImageIO;
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
 import java.lang.annotation.Annotation;
 
 /**
- *
+ *  图片工具类 ImgUtil
  */
 @Slf4j
 public class Test23{
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         //图片缩放
         //ImgUtil.scale(FileUtil.file("~/Pictures/dd.png"), FileUtil.file("~/Pictures/dd2.png"), 0.1f);
@@ -49,15 +52,26 @@ public class Test23{
         //        0.8f//透明度：alpha 必须是范围 [0.0, 1.0] 之内（包含边界值）的一个浮点数字
         //);
 
-        //添加图片水印
-        ImgUtil.pressImage(
-                FileUtil.file("~/Pictures/dd.jpg"),
-                FileUtil.file("~/Pictures/ddShuiyin.jpg"),
-                ImgUtil.read(FileUtil.file("/home/ruoan/Pictures/ds.ico")), //水印图片
-                0, //x坐标修正值。 默认在中间，偏移量相对于中间偏移
-                0, //y坐标修正值。 默认在中间，偏移量相对于中间偏移
-                0.1f
-        );
+        //添加图片水印 (测试失败_)
+        //ImgUtil.pressImage(
+        //        FileUtil.file("~/Pictures/dd.jpg"),
+        //        FileUtil.file("~/Pictures/ddShuiyin.jpg"),
+        //        ImgUtil.read(FileUtil.file("/home/ruoan/Pictures/ds.ico")), //水印图片
+        //        0, //x坐标修正值。 默认在中间，偏移量相对于中间偏移
+        //        0, //y坐标修正值。 默认在中间，偏移量相对于中间偏移
+        //        0.1f
+        //);
+
+
+
+        //旋转
+        // 旋转180度
+        //BufferedImage image = ImgUtil.rotate(ImageIO.read(FileUtil.file("e:/pic/366466.jpg")), 180);
+        //ImgUtil.write(image, FileUtil.file("e:/pic/result.png"));
+
+        //水平翻转
+        //ImgUtil.flip(FileUtil.file("d:/logo.png"), FileUtil.file("d:/result.png"));
+
 
 
 
