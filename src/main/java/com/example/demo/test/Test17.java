@@ -143,7 +143,8 @@ class SubPerson extends Person {
 }
 
 
-class Demo{
+class Demo<M>{
+    //private static M m;
     public static <T> void method(T t){
         System.out.println(t);
     }
@@ -151,4 +152,18 @@ class Demo{
     public static void main(String[] args) {
         method("3t");
     }
+}
+
+abstract class MyFace<K> implements IFace<K> {
+
+    @Override
+    public void show(K k) {
+        System.out.println(k);
+    }
+}
+
+
+interface IFace <K>{
+    void show(K k);
+
 }
