@@ -28,6 +28,7 @@ public class Test28 {
         }
         int count = 0;
         for (int j = 1000000; j < 2000000; j++) {
+            //本来filter.mightContain()预期都应该false,如果true了,那应该是误判
             if (filter.mightContain(j)) {
                 count++;
                 System.out.println(j+"可能误判了!");
@@ -35,7 +36,7 @@ public class Test28 {
             }
 
         }
-        System.out.println("误判总数:"+count);
+        System.out.println("误判总数:"+count);//994
 
 
 
