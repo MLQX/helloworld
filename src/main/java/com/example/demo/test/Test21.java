@@ -15,7 +15,7 @@ public class Test21 {
 
 
         System.out.println(Cat.class.isAssignableFrom(Animal.class));
-        System.out.println(Animal.class.isAssignableFrom(Cat.class));
+        System.out.println(Animal.class.isAssignableFrom(Cat.class));  //方法调用者是父类, 方法参数是子类
 
     }
 

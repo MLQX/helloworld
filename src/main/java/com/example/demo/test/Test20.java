@@ -2,6 +2,7 @@ package com.example.demo.test;
 
 
 import cn.hutool.core.bean.DynaBean;
+import cn.hutool.core.collection.CollUtil;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -14,17 +15,25 @@ public class Test20 {
     public static void main(String[] args) {
 
         //动态bean
-        User user = new User();
-        DynaBean dynaBean = DynaBean.create(user);
+        User2 user = new User2();
+        DynaBean dynaBean = DynaBean.create(User2.class,null); //使用Class类型作为参数后面必须要params参数
         dynaBean.set("name", "张三");
-        dynaBean.set("age",18);
-        dynaBean.toString();
+        dynaBean.set("id",1);
+        System.out.println(dynaBean.toString());
+
+        String name = dynaBean.get("name");//输出“张三”
+        System.out.println(name);
+
+        //invoke
+        Object invokeRet = dynaBean.invoke("shut");
+        System.out.println(invokeRet);
+        //CollUtil.newHashMap();
     }
 
 
 }
 
-  class User{
+  class User2{
     private int id;
     private String name;
 
@@ -46,12 +55,18 @@ public class Test20 {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "User2{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
     }
+
+    public boolean shut(){
+        System.out.println("shut down");
+        return false;
+    }
 }
+
 
 
 
