@@ -19,15 +19,15 @@ public class Test27 {
     public static void main(String[] args) throws IOException {
 
 
-        CronUtil.schedule("*/2 * * * * *", new Task() {
+        CronUtil.schedule("*/30 * * * * *", new Task() {
             @Override
             public void execute() {
                 Console.log("Task executed...");
             }
 
         });
-        CronUtil.setMatchSecond(true);
-        CronUtil.start();
+        CronUtil.setMatchSecond(true); //支持秒级别定时任务
+        CronUtil.start(false);
     }
 
 

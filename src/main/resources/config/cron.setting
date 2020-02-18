@@ -1,4 +1,4 @@
 # 我是注释
 [com.example.demo.cronjob]
-Job1.run = */5 * * * *
-Job2.run = */10 * * * *
+Job1.run = */1 * * * *
+Job2.run = */3 * * * *
