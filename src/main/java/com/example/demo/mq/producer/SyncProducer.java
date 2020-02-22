@@ -1,4 +1,4 @@
-package com.example.demo.mq;
+package com.example.demo.mq.producer;
 
 /*
 *

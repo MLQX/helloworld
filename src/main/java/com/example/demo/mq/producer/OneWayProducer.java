@@ -1,4 +1,4 @@
-package com.example.demo.mq;
+package com.example.demo.mq.producer;
 
 /*
 *
@@ -15,7 +15,7 @@ import org.apache.rocketmq.remoting.exception.RemotingException;
 
 import java.util.concurrent.TimeUnit;
 
-public class AsyncProducer {
+public class OneWayProducer {
     public static void main(String[] args) {
 
 
