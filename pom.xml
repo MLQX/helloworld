@@ -39,6 +39,17 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+<!--        替换默认容器tomcat-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jetty</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -120,7 +131,20 @@
             <version>2.1.0</version>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba</groupId>-->
+<!--            <artifactId>druid-spring-boot-starter</artifactId>-->
+<!--            <version>1.1.10</version>-->
+<!--        </dependency>-->
 
+
+
+<!--        引入自定义自动配置类-->
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>mystarter</artifactId>
+            <version>1.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>

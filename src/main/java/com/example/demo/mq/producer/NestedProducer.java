@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 /**
  * 利用sb脚手架的 消息发送者
  */
-@Component
+//@Component
 public class NestedProducer {
 
     @Autowired

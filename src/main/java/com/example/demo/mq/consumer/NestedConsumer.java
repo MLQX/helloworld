@@ -8,8 +8,8 @@ import org.apache.rocketmq.spring.core.RocketMQTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@RocketMQMessageListener(topic="springboot-producer",consumerGroup = "${rocketmq.consumer.group}")
-@Component
+//@RocketMQMessageListener(topic="springboot-producer",consumerGroup = "${rocketmq.consumer.group}")
+//@Component
 @Slf4j
 public class NestedConsumer implements RocketMQListener<String> {
 
