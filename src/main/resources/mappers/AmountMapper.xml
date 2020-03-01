@@ -28,4 +28,31 @@
       </if>
     </trim>
   </insert>
+  <resultMap id="BaseResultMap" type="com.example.demo.pojo.Amount">
+    <result column="id" jdbcType="VARCHAR" property="id" />
+    <result column="money" jdbcType="DECIMAL" property="money" />
+  </resultMap>
+  <insert id="insert" parameterType="com.example.demo.pojo.Amount">
+    insert into amount (id, money)
+    values (#{id,jdbcType=VARCHAR}, #{money,jdbcType=DECIMAL})
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.demo.pojo.Amount">
+    insert into amount
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="money != null">
+        money,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="money != null">
+        #{money,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
 </mapper>
