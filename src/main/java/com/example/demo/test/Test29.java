@@ -4,13 +4,12 @@ package com.example.demo.test;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
+import org.omg.PortableInterceptor.INACTIVE;
 
 import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.*;
-import java.util.function.Function;
-import java.util.function.Predicate;
-import java.util.function.ToIntFunction;
+import java.util.function.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -218,9 +217,121 @@ public class Test29 {
 
 
         //reduce 归约
+        Integer[] integers = {1, 2, 3, 4, 5};
+        int result = 0;
+        for (int i = 0; i < integers.length; i++) {
+            result += dosomething(integer -> {
+                return integer;
+            }, integers[i]);
+        }
+        log.debug("求和后result的值未{}",result);
+
+        Stream<Integer> stream1 = Stream.of(1, 3, 5, 6, 8);
+        Integer sum = stream1.reduce(new BinaryOperator<Integer>() {
+            @Override
+            public Integer apply(Integer integer, Integer integer2) {
+                return integer + integer2;
+            }
+        }).get();
+        log.debug("使用reduce归约后的求和结果为:{}",sum);
+
+        //求流中元素个数
+        Long collect2 = list.stream().collect(Collectors.counting());
+        log.debug("使用collect收集器后流中元素个数为:{}",collect2);
+
+        //求流中整数求和的值
+        //list.stream().collect(Collectors.summingInt(Test29::getSome2));
+        //ToIntFunction
+        Stream<String> peace = Stream.of("peace", "war", "found");
+        String collect3 = peace.collect(Collectors.joining());
+        log.debug("字符串链接后{}",collect3);
+
+
+        List<InnerStudent> list2 = new ArrayList<>();
+        list2.add(new InnerStudent("张三", Sex.MALE,true));
+        list2.add(new InnerStudent("李素", Sex.MALE,false));
+        list2.add(new InnerStudent("王舞", Sex.FEMALE,false));
+
+        /**
+         * new Function<InnerStudent, Object>() {
+         *             @Override
+         *             public Object apply(InnerStudent innerStudent) {
+         *                 return innerStudent.getName();
+         *             }
+         *         }   <====>    InnerStudent::getName  参数T为InnerStudent实例
+         */
+        list2.stream().map(new Function<InnerStudent, Object>() {
+            @Override
+            public Object apply(InnerStudent innerStudent) {
+                return innerStudent.getName();
+            }
+        }).collect(Collectors.toList()).forEach(Test29::getSome);
 
 
 
+        // groupingBy 通过key对Stream分组
+        Map<Sex, List<InnerStudent>> collect4 = list2.stream()
+                .collect(Collectors.groupingBy(InnerStudent::getSex));
+
+        System.out.println(collect4);
+
+        //partitioningBy 通过true/false分区
+        Map<Boolean, List<InnerStudent>> collect5 = list2.stream()
+                .collect(Collectors.partitioningBy(InnerStudent::isGay));
+
+        System.out.println(collect5);
+        List<InnerStudent> innerStudents = collect5.get(Boolean.TRUE);
+
+
+
+    }
+
+
+    static class InnerStudent{
+        public InnerStudent(String name, Sex sex, boolean gay) {
+            this.name = name;
+            this.sex = sex;
+            this.gay = gay;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public Sex getSex() {
+            return sex;
+        }
+
+        public void setSex(Sex sex) {
+            this.sex = sex;
+        }
+
+        private String name;
+        private Sex sex;
+
+
+        public boolean isGay() {
+            return gay;
+        }
+
+        public void setGay(boolean gay) {
+            this.gay = gay;
+        }
+
+        private boolean gay;
+    }
+    enum Sex{
+        MALE,
+        FEMALE
+    }
+
+
+    static Integer dosomething(Function<Integer,Integer> func,Integer a) {
+        return func.apply(a);
     }
 
 
@@ -231,6 +342,11 @@ public class Test29 {
 
     static void getSome(Object o){
         System.out.println("哈哈");
+    }
+
+
+    static int getSome2(){
+        return 1;
     }
 
 
