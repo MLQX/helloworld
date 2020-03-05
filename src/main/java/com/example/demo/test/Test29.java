@@ -283,6 +283,28 @@ public class Test29 {
         List<InnerStudent> innerStudents = collect5.get(Boolean.TRUE);
 
 
+        // 并行和串行流
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
 
