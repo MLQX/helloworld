@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>helloworld</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo</name>
+    <name>helloworld</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -38,6 +38,11 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <exclusions>
                 <exclusion>
@@ -46,11 +51,16 @@
                 </exclusion>
             </exclusions>
         </dependency>
-<!--        替换默认容器tomcat-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+<!--   替换默认容器tomcat-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jetty</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -140,11 +150,11 @@
 
 
 <!--        引入自定义自动配置类-->
-        <dependency>
-            <groupId>org.example</groupId>
-            <artifactId>mystarter</artifactId>
-            <version>1.1-SNAPSHOT</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.example</groupId>-->
+<!--            <artifactId>mystarter</artifactId>-->
+<!--            <version>1.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
 
 
     <!--    引入 cglib 动态代理-->
@@ -153,7 +163,25 @@
             <artifactId>cglib</artifactId>
             <version>3.2.5</version>
         </dependency>
+    <!--引入swagger-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+
+
+
     </dependencies>
+
+
+
+
 
     <build>
         <plugins>

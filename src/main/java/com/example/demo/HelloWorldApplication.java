@@ -11,13 +11,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @MapperScan("com.example.demo.mapper")
-public class DemoApplication {
+public class HelloWorldApplication {
 
     @Autowired
     private static NestedProducer producer;
     public static void main(String[] args) {
-
-        SpringApplication.run(DemoApplication.class, args);
+        SpringApplication.run(HelloWorldApplication.class, args);
         //开启定时任务
         //CronUtil.start();
 
@@ -30,3 +29,7 @@ public class DemoApplication {
     }
 
 }
+
+
+
+

@@ -32,7 +32,6 @@ public class HelloController {
     @ResponseBody
     public Map<String,Object> lombokTest(){
         Map<String, Object> map = new HashMap<>();
-
         Friend friend = new Friend();
         friend.setId(33);
         friend.setName("eog");
