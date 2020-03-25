@@ -25,7 +25,7 @@ public class ZooTest implements Watcher {
         String path = "/helloworld";
         zk = new ZooKeeper("192.168.237.128:2181", 5000, new ZooTest());
         connectedSemaphore.await();
-        System.out.println("获取到配置值为： "+new String(zk.getData(path,true,stat)));
+        System.out.println("获取到配置值为 ： "+new String(zk.getData(path,true,stat)));
         Thread.sleep(Integer.MAX_VALUE);
     }
 
