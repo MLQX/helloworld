@@ -13,8 +13,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @MapperScan("com.example.demo.mapper")
 public class HelloWorldApplication {
 
-    @Autowired
-    private static NestedProducer producer;
+    //@Autowired
+    //private static NestedProducer producer;
     public static void main(String[] args) {
         SpringApplication.run(HelloWorldApplication.class, args);
         //开启定时任务
