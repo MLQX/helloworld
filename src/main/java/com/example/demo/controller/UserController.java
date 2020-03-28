@@ -22,7 +22,7 @@ public class UserController {
         //u.setEmail("549918019@qq.com");
         u.setId(1L);
         u.setName("张三");
-        u.setManagerId(12L);
+        u.setManagerId(12L );
         return u;
     }
 
