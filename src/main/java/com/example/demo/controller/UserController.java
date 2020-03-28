@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Date;
 
@@ -13,7 +14,6 @@ import java.util.Date;
 public class UserController {
 
     @RequestMapping("/getUser")
-    @ResponseBody
     public User getUser(){
 
         User u = new User();
@@ -22,9 +22,23 @@ public class UserController {
         //u.setEmail("549918019@qq.com");
         u.setId(1L);
         u.setName("张三");
-        u.setManagerId(12L );
+        u.setManagerId(12L);
         return u;
     }
 
+    @RequestMapping("/throwException")
+
+    public int throwException(){
+
+
+        int i  = 1 / 0 ;
+        return i;
+    }
+    @RequestMapping("/toPage")
+    public ModelAndView toPage(){
+
+        ModelAndView modelAndView = new ModelAndView("a");
+        return modelAndView;
+    }
 
 }
