@@ -1,6 +1,9 @@
 package com.example.demo.pojo;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class Amount {
+
     private String id;
 
     private Long money;

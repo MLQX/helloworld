@@ -1,18 +1,24 @@
 package com.example.demo.pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import java.util.Date;
 
 public class User {
+
+
     private Long id;
 
     private String name;
 
     private Integer age;
-
+    @JsonInclude(value = JsonInclude.Include.NON_NULL)
     private String email;
-
+    @JsonIgnore
     private Long managerId;
-
+    @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss a",locale="zh",timezone = "GMT+8")
     private Date createTime;
 
     public Long getId() {

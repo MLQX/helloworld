@@ -16,5 +16,6 @@ public class NestedConsumer implements RocketMQListener<String> {
     @Override
     public void onMessage(String s) {
         log.debug("当前接收到的消息为: "+s);
+        
     }
 }
