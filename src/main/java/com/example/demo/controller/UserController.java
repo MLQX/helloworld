@@ -41,4 +41,20 @@ public class UserController {
         return modelAndView;
     }
 
+
+    @RequestMapping("/setUser")
+    public User setUser(User user){
+        //
+        //User u = new User();
+        //u.setAge(18);
+        //u.setCreateTime(new Date());
+        ////u.setEmail("549918019@qq.com");
+        //u.setId(1L);
+        //u.setName("张三");
+        //u.setManagerId(12L);
+        //return u;
+        log.debug(String.valueOf(user));
+        return null;
+    }
+
 }

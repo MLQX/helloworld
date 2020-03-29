@@ -3,6 +3,7 @@ package com.example.demo.pojo;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.google.gson.annotations.SerializedName;
 
 import java.util.Date;
 
@@ -12,7 +13,7 @@ public class User {
     private Long id;
 
     private String name;
-
+    @SerializedName("_age")
     private Integer age;
     @JsonInclude(value = JsonInclude.Include.NON_NULL)
     private String email;
