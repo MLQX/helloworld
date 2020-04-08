@@ -1,8 +1,8 @@
 //package com.example.demo.test;
 //
 //
-//import cn.hutool.setting.Setting;
-//import cn.hutool.setting.dialect.Props;
+//import com.example.demo.hutool.setting.Setting;
+//import com.example.demo.hutool.setting.dialect.Props;
 //import lombok.extern.slf4j.Slf4j;
 //
 //import java.io.IOException;

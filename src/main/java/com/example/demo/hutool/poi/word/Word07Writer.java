@@ -5,7 +5,7 @@ import com.example.demo.hutool.core.io.IORuntimeException;
 import com.example.demo.hutool.core.io.IoUtil;
 import com.example.demo.hutool.core.lang.Assert;
 import com.example.demo.hutool.core.util.ArrayUtil;
-import cn.hutool.poi.exceptions.POIException;
+import com.example.demo.hutool.poi.exceptions.POIException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.util.Units;
 import org.apache.poi.xwpf.usermodel.ParagraphAlignment;

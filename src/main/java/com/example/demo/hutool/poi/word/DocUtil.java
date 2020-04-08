@@ -2,7 +2,7 @@ package com.example.demo.hutool.poi.word;
 
 import com.example.demo.hutool.core.io.FileUtil;
 import com.example.demo.hutool.core.io.IORuntimeException;
-import cn.hutool.poi.exceptions.POIException;
+import com.example.demo.hutool.poi.exceptions.POIException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.openxml4j.opc.OPCPackage;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
