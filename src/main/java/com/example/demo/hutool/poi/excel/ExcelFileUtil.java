@@ -1,66 +1,53 @@
 package com.example.demo.hutool.poi.excel;
 
-
 import com.example.demo.hutool.core.io.IORuntimeException;
 import com.example.demo.hutool.core.io.IoUtil;
 import org.apache.poi.poifs.filesystem.FileMagic;
 
+import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PushbackInputStream;
 
 /**
- * @author ruoan
- * @version 1.0
- * @date 2020/4/8 16:14
+ * Excel文件工具类
+ * 
+ * @author looly
+ * @since 4.2.1
  */
 public class ExcelFileUtil {
+	// ------------------------------------------------------------------------------------------------ isXls
+	/**
+	 * 是否为XLS格式的Excel文件（HSSF）<br>
+	 * XLS文件主要用于Excel 97~2003创建
+	 * 
+	 * @param in excel输入流
+	 * @return 是否为XLS格式的Excel文件（HSSF）
+	 */
+	public static boolean isXls(InputStream in) {
+		final PushbackInputStream pin = IoUtil.toPushbackStream(in, 8);
+		try {
+			return FileMagic.valueOf(pin) == FileMagic.OLE2;
+		} catch (IOException e) {
+			throw new IORuntimeException(e);
+		}
+	}
 
-    /**
-     * excel97-2003(xls)
-     * @param inputStream
-     * @return
-     */
-    public static boolean isXls(InputStream inputStream){
-
-        //TODO  IoUtil
-        final PushbackInputStream pushbackInputStream = IoUtil.toPushbackStream(inputStream, 8);
-        try {
-            //根据回退流判断文件类型，如果不是想要的类型则抛出异常
-            return FileMagic.valueOf(pushbackInputStream) == FileMagic.OLE2;
-        } catch (IOException e) {
-            throw new IORuntimeException(e);
-        }
-
-
-
-
-
-    }
-
-
-    /**
-     *  2007+ 版本 （xlsx）
-     * @param inputStream
-     * @return
-     */
-    public static boolean isXlsx(InputStream inputStream){
-
-        //TODO  IoUtil
-        final PushbackInputStream pushbackInputStream = IoUtil.toPushbackStream(inputStream, 8);
-        try {
-            //根据回退流判断文件类型，如果不是想要的类型则抛出异常
-            return FileMagic.valueOf(pushbackInputStream) == FileMagic.OOXML;
-        } catch (IOException e) {
-            throw new IORuntimeException(e);
-        }
-
-
-
-
-
-    }
-
-
-
+	/**
+	 * 是否为XLSX格式的Excel文件（XSSF）<br>
+	 * XLSX文件主要用于Excel 2007+创建
+	 * 
+	 * @param in excel输入流
+	 * @return 是否为XLSX格式的Excel文件（XSSF）
+	 */
+	public static boolean isXlsx(InputStream in) {
+		if (false == in.markSupported()) {
+			in = new BufferedInputStream(in);
+		}
+		try {
+			return FileMagic.valueOf(in) == FileMagic.OOXML;
+		} catch (IOException e) {
+			throw new IORuntimeException(e);
+		}
+	}
 }

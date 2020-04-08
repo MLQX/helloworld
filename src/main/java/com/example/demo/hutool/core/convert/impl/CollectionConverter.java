@@ -1,8 +1,8 @@
 package com.example.demo.hutool.core.convert.impl;
 
-import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.convert.Converter;
-import cn.hutool.core.util.TypeUtil;
+import com.example.demo.hutool.core.collection.CollUtil;
+import com.example.demo.hutool.core.convert.Converter;
+import com.example.demo.hutool.core.util.TypeUtil;
 
 import java.lang.reflect.Type;
 import java.util.Collection;

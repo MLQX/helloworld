@@ -1,6 +1,6 @@
 package com.example.demo.hutool.core.date;
 
-import cn.hutool.core.lang.Assert;
+import com.example.demo.hutool.core.lang.Assert;
 
 import java.io.Serializable;
 import java.util.Calendar;
@@ -12,7 +12,7 @@ import java.util.Date;
  * @author Looly
  *
  */
-public class DateBetween implements Serializable {
+public class DateBetween implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	/** 开始日期 */

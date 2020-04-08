@@ -1,6 +1,6 @@
 package com.example.demo.hutool.core.exceptions;
 
-import cn.hutool.core.util.StrUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * 未初始化异常

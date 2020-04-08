@@ -1,21 +1,25 @@
 package com.example.demo.hutool.core.io.file;
 
-import cn.hutool.core.date.DateUnit;
-import cn.hutool.core.exceptions.UtilException;
-import cn.hutool.core.io.FileUtil;
-import cn.hutool.core.io.IORuntimeException;
-import cn.hutool.core.io.LineHandler;
-import cn.hutool.core.lang.Console;
-import cn.hutool.core.util.CharUtil;
-import cn.hutool.core.util.CharsetUtil;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.io.Serializable;
 import java.nio.charset.Charset;
 import java.util.Stack;
-import java.util.concurrent.*;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
+
+import com.example.demo.hutool.core.date.DateUnit;
+import com.example.demo.hutool.core.exceptions.UtilException;
+import com.example.demo.hutool.core.io.FileUtil;
+import com.example.demo.hutool.core.io.IORuntimeException;
+import com.example.demo.hutool.core.io.LineHandler;
+import com.example.demo.hutool.core.lang.Console;
+import com.example.demo.hutool.core.util.CharUtil;
+import com.example.demo.hutool.core.util.CharsetUtil;
 
 /**
  * 文件内容跟随器，实现类似Linux下"tail -f"命令功能

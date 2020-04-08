@@ -1,6 +1,6 @@
 package com.example.demo.hutool.core.math;
 
-import cn.hutool.core.util.StrUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 import java.io.File;
 import java.io.Serializable;

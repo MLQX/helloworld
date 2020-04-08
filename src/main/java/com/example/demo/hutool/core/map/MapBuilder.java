@@ -10,7 +10,7 @@ import java.util.Map;
  * @param <V> Value类型
  * @since 3.1.1
  */
-public class MapBuilder<K, V> implements Serializable {
+public class MapBuilder<K, V> implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	private Map<K, V> map;

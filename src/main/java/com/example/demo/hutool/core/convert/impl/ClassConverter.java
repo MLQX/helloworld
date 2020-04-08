@@ -1,7 +1,7 @@
 package com.example.demo.hutool.core.convert.impl;
 
-import cn.hutool.core.convert.AbstractConverter;
-import cn.hutool.core.util.ClassUtil;
+import com.example.demo.hutool.core.convert.AbstractConverter;
+import com.example.demo.hutool.core.util.ClassUtil;
 
 /**
  * 类转换器<br>

@@ -1,14 +1,14 @@
 package com.example.demo.hutool.core.text;
 
-import cn.hutool.core.lang.PatternPool;
-import cn.hutool.core.util.CharUtil;
-import cn.hutool.core.util.NumberUtil;
-import cn.hutool.core.util.StrUtil;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import com.example.demo.hutool.core.lang.PatternPool;
+import com.example.demo.hutool.core.util.CharUtil;
+import com.example.demo.hutool.core.util.NumberUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * 字符串切分器

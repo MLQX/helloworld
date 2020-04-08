@@ -1,7 +1,7 @@
 package com.example.demo.hutool.core.lang.tree.parser;
 
-import cn.hutool.core.lang.tree.Tree;
-import cn.hutool.core.lang.tree.TreeNode;
+import com.example.demo.hutool.core.lang.tree.TreeNode;
+import com.example.demo.hutool.core.lang.tree.Tree;
 
 /**
  * 默认的简单转换器

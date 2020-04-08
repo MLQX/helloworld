@@ -1,12 +1,12 @@
 package com.example.demo.hutool.core.exceptions;
 
-import cn.hutool.core.util.StrUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * 工具类异常
  * @author xiaoleilu
  */
-public class UtilException extends RuntimeException {
+public class UtilException extends RuntimeException{
 	private static final long serialVersionUID = 8247610319171014183L;
 
 	public UtilException(Throwable e) {

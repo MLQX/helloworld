@@ -1,9 +1,9 @@
 package com.example.demo.hutool.core.io.watch.watchers;
 
-import cn.hutool.core.io.watch.Watcher;
-
 import java.nio.file.Path;
 import java.nio.file.WatchEvent;
+
+import com.example.demo.hutool.core.io.watch.Watcher;
 
 /**
  * 跳过所有事件处理Watcher<br>

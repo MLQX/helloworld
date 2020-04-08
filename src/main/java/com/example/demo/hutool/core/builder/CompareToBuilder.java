@@ -1,12 +1,12 @@
 package com.example.demo.hutool.core.builder;
 
-import cn.hutool.core.util.ArrayUtil;
-
 import java.lang.reflect.AccessibleObject;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.Collection;
 import java.util.Comparator;
+
+import com.example.demo.hutool.core.util.ArrayUtil;
 
 /** 
  * 用于构建 {@link java.lang.Comparable#compareTo(Object)} 方法的辅助工具
@@ -221,10 +221,10 @@ public class CompareToBuilder implements Builder<Integer> {
      * @since 2.2 (2.0 as <code>reflectionCompare(Object, Object, boolean, Class)</code>)
      */
     public static int reflectionCompare(
-        final Object lhs,
-        final Object rhs,
+        final Object lhs, 
+        final Object rhs, 
         final boolean compareTransients, 
-        final Class<?> reflectUpToClass,
+        final Class<?> reflectUpToClass, 
         final String... excludeFields) {
 
         if (lhs == rhs) {

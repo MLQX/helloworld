@@ -1,14 +1,14 @@
 package com.example.demo.hutool.core.util;
 
-import cn.hutool.core.convert.BasicType;
-import cn.hutool.core.exceptions.UtilException;
-import cn.hutool.core.io.FileUtil;
-import cn.hutool.core.io.IORuntimeException;
-import cn.hutool.core.io.resource.ResourceUtil;
-import cn.hutool.core.lang.Assert;
-import cn.hutool.core.lang.ClassScanner;
-import cn.hutool.core.lang.Filter;
-import cn.hutool.core.lang.Singleton;
+import com.example.demo.hutool.core.convert.BasicType;
+import com.example.demo.hutool.core.exceptions.UtilException;
+import com.example.demo.hutool.core.io.FileUtil;
+import com.example.demo.hutool.core.io.IORuntimeException;
+import com.example.demo.hutool.core.io.resource.ResourceUtil;
+import com.example.demo.hutool.core.lang.Assert;
+import com.example.demo.hutool.core.lang.ClassScanner;
+import com.example.demo.hutool.core.lang.Filter;
+import com.example.demo.hutool.core.lang.Singleton;
 
 import java.io.IOException;
 import java.lang.annotation.Annotation;
@@ -19,7 +19,12 @@ import java.lang.reflect.Type;
 import java.net.URI;
 import java.net.URL;
 import java.time.temporal.TemporalAccessor;
-import java.util.*;
+import java.util.Date;
+import java.util.Enumeration;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Locale;
+import java.util.Set;
 
 /**
  * 类工具类 <br>
@@ -106,7 +111,7 @@ public class ClassUtil {
 
 	/**
 	 * 获取完整类名的短格式如：<br>
-	 * cn.hutool.core.util.StrUtil -》c.h.c.u.StrUtil
+	 * com.example.demo.hutool.core.util.StrUtil -》c.h.c.u.StrUtil
 	 *
 	 * @param className 类名
 	 * @return 短格式类名

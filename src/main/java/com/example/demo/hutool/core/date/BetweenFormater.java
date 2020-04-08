@@ -1,15 +1,15 @@
 package com.example.demo.hutool.core.date;
 
-import cn.hutool.core.util.StrUtil;
-
 import java.io.Serializable;
+
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * 时长格式化器
  * @author Looly
  *
  */
-public class BetweenFormater implements Serializable {
+public class BetweenFormater implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	/** 时长毫秒数 */

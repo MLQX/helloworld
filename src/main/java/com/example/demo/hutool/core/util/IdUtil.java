@@ -1,9 +1,9 @@
 package com.example.demo.hutool.core.util;
 
-import cn.hutool.core.lang.ObjectId;
-import cn.hutool.core.lang.Singleton;
-import cn.hutool.core.lang.Snowflake;
-import cn.hutool.core.lang.UUID;
+import com.example.demo.hutool.core.lang.ObjectId;
+import com.example.demo.hutool.core.lang.Singleton;
+import com.example.demo.hutool.core.lang.Snowflake;
+import com.example.demo.hutool.core.lang.UUID;
 
 /**
  * ID生成器工具类，此工具类中主要封装：

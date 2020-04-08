@@ -1,12 +1,5 @@
 package com.example.demo.hutool.core.io.resource;
 
-import cn.hutool.core.io.FileUtil;
-import cn.hutool.core.io.IORuntimeException;
-import cn.hutool.core.io.IoUtil;
-import cn.hutool.core.util.CharsetUtil;
-import cn.hutool.core.util.ObjectUtil;
-import cn.hutool.core.util.URLUtil;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.InputStream;
@@ -14,12 +7,19 @@ import java.io.Serializable;
 import java.net.URL;
 import java.nio.charset.Charset;
 
+import com.example.demo.hutool.core.io.FileUtil;
+import com.example.demo.hutool.core.io.IORuntimeException;
+import com.example.demo.hutool.core.io.IoUtil;
+import com.example.demo.hutool.core.util.CharsetUtil;
+import com.example.demo.hutool.core.util.ObjectUtil;
+import com.example.demo.hutool.core.util.URLUtil;
+
 /**
  * URL资源访问类
  * @author Looly
  *
  */
-public class UrlResource implements Resource, Serializable {
+public class UrlResource implements Resource, Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	protected URL url;

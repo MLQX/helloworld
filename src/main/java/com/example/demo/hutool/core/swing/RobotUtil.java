@@ -1,14 +1,17 @@
 package com.example.demo.hutool.core.swing;
 
-import cn.hutool.core.exceptions.UtilException;
-import cn.hutool.core.img.ImgUtil;
-import cn.hutool.core.swing.clipboard.ClipboardUtil;
-
-import java.awt.*;
+import java.awt.AWTException;
+import java.awt.Rectangle;
+import java.awt.Robot;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
+
+import com.example.demo.hutool.core.exceptions.UtilException;
+import com.example.demo.hutool.core.img.ImgUtil;
+import com.example.demo.hutool.core.swing.ScreenUtil;
+import com.example.demo.hutool.core.swing.clipboard.ClipboardUtil;
 
 /**
  * {@link Robot} 封装工具类，提供截屏等工具

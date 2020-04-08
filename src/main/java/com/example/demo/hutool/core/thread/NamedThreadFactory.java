@@ -1,10 +1,10 @@
 package com.example.demo.hutool.core.thread;
 
-import cn.hutool.core.util.StrUtil;
-
 import java.lang.Thread.UncaughtExceptionHandler;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * 线程创建工厂类，此工厂可选配置：

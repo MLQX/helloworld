@@ -1,8 +1,8 @@
 package com.example.demo.hutool.core.collection;
 
-import cn.hutool.core.io.IORuntimeException;
-import cn.hutool.core.io.IoUtil;
-import cn.hutool.core.lang.Assert;
+import com.example.demo.hutool.core.io.IORuntimeException;
+import com.example.demo.hutool.core.io.IoUtil;
+import com.example.demo.hutool.core.lang.Assert;
 
 import java.io.*;
 import java.nio.charset.Charset;

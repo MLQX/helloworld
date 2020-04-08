@@ -9,7 +9,7 @@ import java.io.Serializable;
  * @author Looly
  * @since 4.2.2
  */
-public interface Builder<T> extends Serializable {
+public interface Builder<T> extends Serializable{
 	/**
 	 * 构建
 	 * 

@@ -1,12 +1,13 @@
 package com.example.demo.hutool.core.lang;
 
-import cn.hutool.core.util.CharUtil;
-import cn.hutool.core.util.StrUtil;
+import static java.lang.System.out;
 
 import java.util.Scanner;
 
+import com.example.demo.hutool.core.util.CharUtil;
+import com.example.demo.hutool.core.util.StrUtil;
+
 import static java.lang.System.err;
-import static java.lang.System.out;
 
 /**
  * 命令行（控制台）工具方法类<br>

@@ -1,8 +1,8 @@
 package com.example.demo.hutool.core.text;
 
-import cn.hutool.core.util.CharUtil;
-import cn.hutool.core.util.HexUtil;
-import cn.hutool.core.util.StrUtil;
+import com.example.demo.hutool.core.util.CharUtil;
+import com.example.demo.hutool.core.util.HexUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * 提供Unicode字符串和普通字符串之间的转换

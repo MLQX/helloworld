@@ -1,12 +1,5 @@
 package com.example.demo.hutool.core.map;
 
-import cn.hutool.core.convert.Convert;
-import cn.hutool.core.getter.OptNullBasicTypeFromObjectGetter;
-import cn.hutool.core.util.ArrayUtil;
-import cn.hutool.core.util.BooleanUtil;
-import cn.hutool.core.util.ClassLoaderUtil;
-import cn.hutool.core.util.StrUtil;
-
 import java.io.Serializable;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -14,6 +7,13 @@ import java.lang.reflect.Proxy;
 import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
+
+import com.example.demo.hutool.core.convert.Convert;
+import com.example.demo.hutool.core.getter.OptNullBasicTypeFromObjectGetter;
+import com.example.demo.hutool.core.util.ArrayUtil;
+import com.example.demo.hutool.core.util.BooleanUtil;
+import com.example.demo.hutool.core.util.ClassLoaderUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * Map代理，提供各种getXXX方法，并提供默认值支持
@@ -25,7 +25,7 @@ public class MapProxy implements Map<Object, Object>, OptNullBasicTypeFromObject
 	private static final long serialVersionUID = 1L;
 
 	@SuppressWarnings("rawtypes")
-    Map map;
+	Map map;
 
 	/**
 	 * 创建代理Map<br>

@@ -1,15 +1,20 @@
 package com.example.demo.hutool.core.bean;
 
-import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.convert.Convert;
-import cn.hutool.core.map.MapUtil;
-import cn.hutool.core.text.StrBuilder;
-import cn.hutool.core.util.ArrayUtil;
-import cn.hutool.core.util.CharUtil;
-import cn.hutool.core.util.StrUtil;
-
 import java.io.Serializable;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.example.demo.hutool.core.collection.CollUtil;
+import com.example.demo.hutool.core.convert.Convert;
+import com.example.demo.hutool.core.map.MapUtil;
+import com.example.demo.hutool.core.text.StrBuilder;
+import com.example.demo.hutool.core.util.ArrayUtil;
+import com.example.demo.hutool.core.util.CharUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * Bean路径表达式，用于获取多层嵌套Bean中的字段值或Bean对象<br>
@@ -32,7 +37,7 @@ import java.util.*;
  * @author Looly
  * @since 4.0.6
  */
-public class BeanPath implements Serializable {
+public class BeanPath implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	/** 表达式边界符号数组 */

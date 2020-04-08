@@ -1,9 +1,9 @@
 package com.example.demo.hutool.core.bean.copier.provider;
 
-import cn.hutool.core.bean.copier.ValueProvider;
-import cn.hutool.core.convert.Convert;
-import cn.hutool.core.map.CaseInsensitiveMap;
-import cn.hutool.core.util.StrUtil;
+import com.example.demo.hutool.core.bean.copier.ValueProvider;
+import com.example.demo.hutool.core.convert.Convert;
+import com.example.demo.hutool.core.map.CaseInsensitiveMap;
+import com.example.demo.hutool.core.util.StrUtil;
 
 import java.lang.reflect.Type;
 import java.util.Map;

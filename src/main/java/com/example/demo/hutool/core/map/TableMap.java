@@ -1,10 +1,10 @@
 package com.example.demo.hutool.core.map;
 
-import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.util.ArrayUtil;
-
 import java.io.Serializable;
 import java.util.*;
+
+import com.example.demo.hutool.core.collection.CollUtil;
+import com.example.demo.hutool.core.util.ArrayUtil;
 
 /**
  * 无重复键的Map

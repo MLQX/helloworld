@@ -1,11 +1,11 @@
 package com.example.demo.hutool.core.text.replacer;
 
-import cn.hutool.core.lang.Chain;
-import cn.hutool.core.text.StrBuilder;
-
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+
+import com.example.demo.hutool.core.lang.Chain;
+import com.example.demo.hutool.core.text.StrBuilder;
 
 /**
  * 字符串替换链，用于组合多个字符串替换逻辑

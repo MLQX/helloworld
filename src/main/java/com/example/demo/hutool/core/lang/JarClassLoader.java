@@ -1,10 +1,10 @@
 package com.example.demo.hutool.core.lang;
 
-import cn.hutool.core.exceptions.UtilException;
-import cn.hutool.core.io.FileUtil;
-import cn.hutool.core.util.ClassUtil;
-import cn.hutool.core.util.ReflectUtil;
-import cn.hutool.core.util.URLUtil;
+import com.example.demo.hutool.core.exceptions.UtilException;
+import com.example.demo.hutool.core.io.FileUtil;
+import com.example.demo.hutool.core.util.ClassUtil;
+import com.example.demo.hutool.core.util.ReflectUtil;
+import com.example.demo.hutool.core.util.URLUtil;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,12 +1,16 @@
 package com.example.demo.hutool.core.text;
 
-import cn.hutool.core.lang.MurmurHash;
-
 import java.math.BigInteger;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock;
+
+import com.example.demo.hutool.core.lang.MurmurHash;
 
 /**
  * <p>

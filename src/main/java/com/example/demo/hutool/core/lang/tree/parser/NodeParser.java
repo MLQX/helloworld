@@ -1,6 +1,6 @@
 package com.example.demo.hutool.core.lang.tree.parser;
 
-import cn.hutool.core.lang.tree.Tree;
+import com.example.demo.hutool.core.lang.tree.Tree;
 
 /**
  * 树节点解析器 可以参考{@link DefaultNodeParser}

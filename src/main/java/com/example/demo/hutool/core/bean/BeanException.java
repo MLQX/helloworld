@@ -1,13 +1,13 @@
 package com.example.demo.hutool.core.bean;
 
-import cn.hutool.core.exceptions.ExceptionUtil;
-import cn.hutool.core.util.StrUtil;
+import com.example.demo.hutool.core.exceptions.ExceptionUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * Bean异常
  * @author xiaoleilu
  */
-public class BeanException extends RuntimeException {
+public class BeanException extends RuntimeException{
 	private static final long serialVersionUID = -8096998667745023423L;
 
 	public BeanException(Throwable e) {

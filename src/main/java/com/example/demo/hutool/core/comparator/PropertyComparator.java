@@ -1,10 +1,10 @@
 package com.example.demo.hutool.core.comparator;
 
-import cn.hutool.core.bean.BeanUtil;
-import cn.hutool.core.util.ObjectUtil;
-
 import java.io.Serializable;
 import java.util.Comparator;
+
+import com.example.demo.hutool.core.bean.BeanUtil;
+import com.example.demo.hutool.core.util.ObjectUtil;
 
 /**
  * Bean属性排序器<br>

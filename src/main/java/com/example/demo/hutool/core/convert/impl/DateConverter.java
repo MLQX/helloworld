@@ -1,9 +1,9 @@
 package com.example.demo.hutool.core.convert.impl;
 
-import cn.hutool.core.convert.AbstractConverter;
-import cn.hutool.core.date.DateTime;
-import cn.hutool.core.date.DateUtil;
-import cn.hutool.core.util.StrUtil;
+import com.example.demo.hutool.core.convert.AbstractConverter;
+import com.example.demo.hutool.core.date.DateTime;
+import com.example.demo.hutool.core.date.DateUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 import java.time.temporal.TemporalAccessor;
 import java.util.Calendar;
@@ -18,33 +18,33 @@ import java.util.Date;
 public class DateConverter extends AbstractConverter<java.util.Date> {
 	private static final long serialVersionUID = 1L;
 
-	private Class<? extends Date> targetType;
+	private Class<? extends java.util.Date> targetType;
 	/** 日期格式化 */
 	private String format;
 
 	/**
 	 * 构造
-	 *
+	 * 
 	 * @param targetType 目标类型
 	 */
-	public DateConverter(Class<? extends Date> targetType) {
+	public DateConverter(Class<? extends java.util.Date> targetType) {
 		this.targetType = targetType;
 	}
 
 	/**
 	 * 构造
-	 *
+	 * 
 	 * @param targetType 目标类型
 	 * @param format 日期格式
 	 */
-	public DateConverter(Class<? extends Date> targetType, String format) {
+	public DateConverter(Class<? extends java.util.Date> targetType, String format) {
 		this.targetType = targetType;
 		this.format = format;
 	}
 
 	/**
 	 * 获取日期格式
-	 *
+	 * 
 	 * @return 设置日期格式
 	 */
 	public String getFormat() {
@@ -53,7 +53,7 @@ public class DateConverter extends AbstractConverter<java.util.Date> {
 
 	/**
 	 * 设置日期格式
-	 *
+	 * 
 	 * @param format 日期格式
 	 */
 	public void setFormat(String format) {

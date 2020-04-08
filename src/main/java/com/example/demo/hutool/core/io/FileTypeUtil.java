@@ -1,13 +1,13 @@
 package com.example.demo.hutool.core.io;
 
-import cn.hutool.core.util.StrUtil;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
+
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * 文件类型判断工具类

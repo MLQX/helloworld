@@ -1,12 +1,12 @@
 package com.example.demo.hutool.core.util;
 
-import cn.hutool.core.collection.IterUtil;
-import cn.hutool.core.comparator.CompareUtil;
-import cn.hutool.core.convert.Convert;
-import cn.hutool.core.exceptions.UtilException;
-import cn.hutool.core.io.FastByteArrayOutputStream;
-import cn.hutool.core.io.IoUtil;
-import cn.hutool.core.map.MapUtil;
+import com.example.demo.hutool.core.collection.IterUtil;
+import com.example.demo.hutool.core.comparator.CompareUtil;
+import com.example.demo.hutool.core.convert.Convert;
+import com.example.demo.hutool.core.exceptions.UtilException;
+import com.example.demo.hutool.core.io.FastByteArrayOutputStream;
+import com.example.demo.hutool.core.io.IoUtil;
+import com.example.demo.hutool.core.map.MapUtil;
 
 import java.io.ByteArrayInputStream;
 import java.io.ObjectInputStream;
@@ -480,7 +480,7 @@ public class ObjectUtil {
 	 * @param c1  对象1，可以为{@code null}
 	 * @param c2  对象2，可以为{@code null}
 	 * @return 比较结果，如果c1 &lt; c2，返回数小于0，c1==c2返回0，c1 &gt; c2 大于0
-	 * @see java.util.Comparator#compare(Object, Object)
+	 * @see Comparator#compare(Object, Object)
 	 * @since 3.0.7
 	 */
 	public static <T extends Comparable<? super T>> int compare(T c1, T c2) {
@@ -495,7 +495,7 @@ public class ObjectUtil {
 	 * @param c2          对象2，可以为{@code null}
 	 * @param nullGreater 当被比较对象为null时是否排在前面
 	 * @return 比较结果，如果c1 &lt; c2，返回数小于0，c1==c2返回0，c1 &gt; c2 大于0
-	 * @see java.util.Comparator#compare(Object, Object)
+	 * @see Comparator#compare(Object, Object)
 	 * @since 3.0.7
 	 */
 	public static <T extends Comparable<? super T>> int compare(T c1, T c2, boolean nullGreater) {

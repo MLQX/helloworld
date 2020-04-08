@@ -1,17 +1,29 @@
 package com.example.demo.hutool.core.map;
 
-import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.convert.Convert;
-import cn.hutool.core.lang.Editor;
-import cn.hutool.core.lang.Filter;
-import cn.hutool.core.lang.TypeReference;
-import cn.hutool.core.util.ArrayUtil;
-import cn.hutool.core.util.ObjectUtil;
-import cn.hutool.core.util.ReflectUtil;
-import cn.hutool.core.util.StrUtil;
+import com.example.demo.hutool.core.collection.CollUtil;
+import com.example.demo.hutool.core.convert.Convert;
+import com.example.demo.hutool.core.lang.Editor;
+import com.example.demo.hutool.core.lang.Filter;
+import com.example.demo.hutool.core.lang.TypeReference;
+import com.example.demo.hutool.core.util.ArrayUtil;
+import com.example.demo.hutool.core.util.ObjectUtil;
+import com.example.demo.hutool.core.util.ReflectUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
-import java.util.*;
+import java.util.AbstractMap;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.IdentityHashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
+import java.util.TreeMap;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -512,7 +524,7 @@ public class MapUtil {
 	 * @since 5.0.4
 	 */
 	public static String sortJoin(Map<?, ?> params, String separator, String keyValueSeparator, boolean isIgnoreNull,
-                                  String... otherParams) {
+	                              String... otherParams) {
 		return join(sort(params), separator, keyValueSeparator, isIgnoreNull, otherParams);
 	}
 

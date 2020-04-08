@@ -1,10 +1,10 @@
 package com.example.demo.hutool.core.exceptions;
 
-import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.io.FastByteArrayOutputStream;
-import cn.hutool.core.util.ArrayUtil;
-import cn.hutool.core.util.ReflectUtil;
-import cn.hutool.core.util.StrUtil;
+import com.example.demo.hutool.core.collection.CollUtil;
+import com.example.demo.hutool.core.io.FastByteArrayOutputStream;
+import com.example.demo.hutool.core.util.ArrayUtil;
+import com.example.demo.hutool.core.util.ReflectUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 import java.io.PrintStream;
 import java.lang.reflect.InvocationTargetException;

@@ -1,8 +1,8 @@
 package com.example.demo.hutool.core.text.escape;
 
-import cn.hutool.core.text.StrBuilder;
-import cn.hutool.core.text.replacer.StrReplacer;
-import cn.hutool.core.util.CharUtil;
+import com.example.demo.hutool.core.text.StrBuilder;
+import com.example.demo.hutool.core.text.replacer.StrReplacer;
+import com.example.demo.hutool.core.util.CharUtil;
 
 /**
  * 形如&#39;的反转义器

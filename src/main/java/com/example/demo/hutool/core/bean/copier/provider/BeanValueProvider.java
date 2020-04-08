@@ -1,10 +1,10 @@
 package com.example.demo.hutool.core.bean.copier.provider;
 
-import cn.hutool.core.bean.BeanDesc.PropDesc;
-import cn.hutool.core.bean.BeanUtil;
-import cn.hutool.core.bean.copier.ValueProvider;
-import cn.hutool.core.exceptions.UtilException;
-import cn.hutool.core.util.StrUtil;
+import com.example.demo.hutool.core.bean.BeanDesc.PropDesc;
+import com.example.demo.hutool.core.bean.BeanUtil;
+import com.example.demo.hutool.core.bean.copier.ValueProvider;
+import com.example.demo.hutool.core.exceptions.UtilException;
+import com.example.demo.hutool.core.util.StrUtil;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;

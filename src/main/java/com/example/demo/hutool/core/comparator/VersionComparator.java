@@ -1,12 +1,12 @@
 package com.example.demo.hutool.core.comparator;
 
-import cn.hutool.core.util.CharUtil;
-import cn.hutool.core.util.ObjectUtil;
-import cn.hutool.core.util.StrUtil;
-
 import java.io.Serializable;
 import java.util.Comparator;
 import java.util.List;
+
+import com.example.demo.hutool.core.util.CharUtil;
+import com.example.demo.hutool.core.util.ObjectUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * 版本比较器<br>

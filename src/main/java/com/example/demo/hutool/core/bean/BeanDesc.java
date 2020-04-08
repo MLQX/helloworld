@@ -1,10 +1,5 @@
 package com.example.demo.hutool.core.bean;
 
-import cn.hutool.core.annotation.Alias;
-import cn.hutool.core.lang.Assert;
-import cn.hutool.core.map.CaseInsensitiveMap;
-import cn.hutool.core.util.*;
-
 import java.io.Serializable;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -12,6 +7,16 @@ import java.lang.reflect.Type;
 import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.Map;
+
+import com.example.demo.hutool.core.annotation.Alias;
+import com.example.demo.hutool.core.lang.Assert;
+import com.example.demo.hutool.core.map.CaseInsensitiveMap;
+import com.example.demo.hutool.core.util.BooleanUtil;
+import com.example.demo.hutool.core.util.ClassUtil;
+import com.example.demo.hutool.core.util.ModifierUtil;
+import com.example.demo.hutool.core.util.ReflectUtil;
+import com.example.demo.hutool.core.util.StrUtil;
+import com.example.demo.hutool.core.util.TypeUtil;
 
 /**
  * Bean信息描述做为BeanInfo替代方案，此对象持有JavaBean中的setters和getters等相关信息描述<br>
@@ -27,7 +32,7 @@ import java.util.Map;
  * @author looly
  * @since 3.1.2
  */
-public class BeanDesc implements Serializable {
+public class BeanDesc implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	/** Bean类 */

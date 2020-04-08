@@ -1,12 +1,40 @@
 package com.example.demo.hutool.core.convert;
 
-import cn.hutool.core.bean.BeanUtil;
-import cn.hutool.core.convert.impl.*;
-import cn.hutool.core.date.DateTime;
-import cn.hutool.core.lang.TypeReference;
-import cn.hutool.core.util.ObjectUtil;
-import cn.hutool.core.util.ReflectUtil;
-import cn.hutool.core.util.TypeUtil;
+import com.example.demo.hutool.core.bean.BeanUtil;
+import com.example.demo.hutool.core.convert.impl.ArrayConverter;
+import com.example.demo.hutool.core.convert.impl.AtomicBooleanConverter;
+import com.example.demo.hutool.core.convert.impl.AtomicReferenceConverter;
+import com.example.demo.hutool.core.convert.impl.BeanConverter;
+import com.example.demo.hutool.core.convert.impl.BooleanConverter;
+import com.example.demo.hutool.core.convert.impl.CalendarConverter;
+import com.example.demo.hutool.core.convert.impl.CharacterConverter;
+import com.example.demo.hutool.core.convert.impl.CharsetConverter;
+import com.example.demo.hutool.core.convert.impl.ClassConverter;
+import com.example.demo.hutool.core.convert.impl.CollectionConverter;
+import com.example.demo.hutool.core.convert.impl.CurrencyConverter;
+import com.example.demo.hutool.core.convert.impl.DateConverter;
+import com.example.demo.hutool.core.convert.impl.DurationConverter;
+import com.example.demo.hutool.core.convert.impl.EnumConverter;
+import com.example.demo.hutool.core.convert.impl.LocaleConverter;
+import com.example.demo.hutool.core.convert.impl.MapConverter;
+import com.example.demo.hutool.core.convert.impl.NumberConverter;
+import com.example.demo.hutool.core.convert.impl.OptionalConverter;
+import com.example.demo.hutool.core.convert.impl.PathConverter;
+import com.example.demo.hutool.core.convert.impl.PeriodConverter;
+import com.example.demo.hutool.core.convert.impl.PrimitiveConverter;
+import com.example.demo.hutool.core.convert.impl.ReferenceConverter;
+import com.example.demo.hutool.core.convert.impl.StackTraceElementConverter;
+import com.example.demo.hutool.core.convert.impl.StringConverter;
+import com.example.demo.hutool.core.convert.impl.TemporalAccessorConverter;
+import com.example.demo.hutool.core.convert.impl.TimeZoneConverter;
+import com.example.demo.hutool.core.convert.impl.URIConverter;
+import com.example.demo.hutool.core.convert.impl.URLConverter;
+import com.example.demo.hutool.core.convert.impl.UUIDConverter;
+import com.example.demo.hutool.core.date.DateTime;
+import com.example.demo.hutool.core.lang.TypeReference;
+import com.example.demo.hutool.core.util.ObjectUtil;
+import com.example.demo.hutool.core.util.ReflectUtil;
+import com.example.demo.hutool.core.util.TypeUtil;
 
 import java.io.Serializable;
 import java.lang.ref.SoftReference;
@@ -18,9 +46,24 @@ import java.net.URI;
 import java.net.URL;
 import java.nio.charset.Charset;
 import java.nio.file.Path;
-import java.time.*;
+import java.time.Duration;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.OffsetDateTime;
+import java.time.OffsetTime;
+import java.time.Period;
+import java.time.ZonedDateTime;
 import java.time.temporal.TemporalAccessor;
-import java.util.*;
+import java.util.Calendar;
+import java.util.Collection;
+import java.util.Currency;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Optional;
+import java.util.TimeZone;
+import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -39,7 +82,7 @@ import java.util.concurrent.atomic.AtomicReference;
  * @author Looly
  *
  */
-public class ConverterRegistry implements Serializable {
+public class ConverterRegistry implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	/** 默认类型转换器 */

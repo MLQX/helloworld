@@ -1,7 +1,7 @@
 package com.example.demo.hutool.core.util;
 
-import cn.hutool.core.exceptions.UtilException;
-import cn.hutool.core.lang.Assert;
+import com.example.demo.hutool.core.exceptions.UtilException;
+import com.example.demo.hutool.core.lang.Assert;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -1783,7 +1783,7 @@ public class NumberUtil {
 	 *
 	 * @param numberArray 数字数组
 	 * @return 最小值
-	 * @see ArrayUtil#min(Comparable[])
+	 * @see ArrayUtil#min(Comparable[]) 
 	 * @since 5.0.8
 	 */
 	public static BigDecimal min(BigDecimal... numberArray) {

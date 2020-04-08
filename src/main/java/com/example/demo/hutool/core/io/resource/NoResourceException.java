@@ -1,8 +1,8 @@
 package com.example.demo.hutool.core.io.resource;
 
-import cn.hutool.core.exceptions.ExceptionUtil;
-import cn.hutool.core.io.IORuntimeException;
-import cn.hutool.core.util.StrUtil;
+import com.example.demo.hutool.core.exceptions.ExceptionUtil;
+import com.example.demo.hutool.core.io.IORuntimeException;
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * 资源文件或资源不存在异常

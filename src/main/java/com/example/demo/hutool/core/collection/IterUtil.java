@@ -1,10 +1,10 @@
 package com.example.demo.hutool.core.collection;
 
-import cn.hutool.core.lang.Filter;
-import cn.hutool.core.map.MapUtil;
-import cn.hutool.core.util.ArrayUtil;
-import cn.hutool.core.util.ReflectUtil;
-import cn.hutool.core.util.StrUtil;
+import com.example.demo.hutool.core.lang.Filter;
+import com.example.demo.hutool.core.map.MapUtil;
+import com.example.demo.hutool.core.util.ArrayUtil;
+import com.example.demo.hutool.core.util.ReflectUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 import java.util.*;
 import java.util.Map.Entry;

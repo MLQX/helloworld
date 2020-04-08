@@ -1,14 +1,14 @@
 package com.example.demo.hutool.core.io.resource;
 
-import cn.hutool.core.io.IORuntimeException;
-import cn.hutool.core.io.IoUtil;
-import cn.hutool.core.util.CharsetUtil;
-
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.Serializable;
 import java.net.URL;
 import java.nio.charset.Charset;
+
+import com.example.demo.hutool.core.io.IORuntimeException;
+import com.example.demo.hutool.core.io.IoUtil;
+import com.example.demo.hutool.core.util.CharsetUtil;
 
 /**
  * 基于{@link InputStream}的资源获取器<br>

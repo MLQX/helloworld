@@ -1,9 +1,9 @@
 package com.example.demo.hutool.core.codec;
 
-import cn.hutool.core.util.CharsetUtil;
-import cn.hutool.core.util.StrUtil;
-
 import java.nio.charset.Charset;
+
+import com.example.demo.hutool.core.util.CharsetUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * Base32 - encodes and decodes RFC3548 Base32 (see http://www.faqs.org/rfcs/rfc3548.html )<br>

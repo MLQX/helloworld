@@ -1,8 +1,8 @@
 package com.example.demo.hutool.core.text.csv;
 
-import cn.hutool.core.util.CharUtil;
-
 import java.io.Serializable;
+
+import com.example.demo.hutool.core.util.CharUtil;
 
 /**
  * CSV基础配置项
@@ -10,7 +10,7 @@ import java.io.Serializable;
  * @author looly
  * @since 4.0.5
  */
-public class CsvConfig implements Serializable {
+public class CsvConfig implements Serializable{
 	private static final long serialVersionUID = -8069578249066158459L;
 	
 	/** 字段分隔符，默认逗号',' */

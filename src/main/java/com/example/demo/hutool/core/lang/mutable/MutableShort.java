@@ -1,6 +1,6 @@
 package com.example.demo.hutool.core.lang.mutable;
 
-import cn.hutool.core.util.NumberUtil;
+import com.example.demo.hutool.core.util.NumberUtil;
 
 /**
  * 可变 <code>short</code> 类型

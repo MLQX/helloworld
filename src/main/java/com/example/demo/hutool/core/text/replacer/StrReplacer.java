@@ -1,9 +1,9 @@
 package com.example.demo.hutool.core.text.replacer;
 
-import cn.hutool.core.lang.Replacer;
-import cn.hutool.core.text.StrBuilder;
-
 import java.io.Serializable;
+
+import com.example.demo.hutool.core.lang.Replacer;
+import com.example.demo.hutool.core.text.StrBuilder;
 
 /**
  * 抽象字符串替换类<br>

@@ -1,10 +1,10 @@
 package com.example.demo.hutool.core.io;
 
-import cn.hutool.core.util.CharsetUtil;
-
 import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.charset.Charset;
+
+import com.example.demo.hutool.core.util.CharsetUtil;
 
 /**
  * 基于快速缓冲FastByteBuffer的OutputStream，随着数据的增长自动扩充缓冲区

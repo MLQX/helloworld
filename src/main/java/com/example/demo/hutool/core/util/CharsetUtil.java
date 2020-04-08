@@ -1,11 +1,11 @@
 package com.example.demo.hutool.core.util;
 
-import cn.hutool.core.io.FileUtil;
-
 import java.io.File;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.charset.UnsupportedCharsetException;
+
+import com.example.demo.hutool.core.io.FileUtil;
 
 /**
  * 字符集工具类
@@ -45,7 +45,7 @@ public class CharsetUtil {
 	 * @return Charset
 	 * @throws UnsupportedCharsetException 编码不支持
 	 */
-	public static Charset charset(String charsetName) throws UnsupportedCharsetException {
+	public static Charset charset(String charsetName) throws UnsupportedCharsetException{
 		return StrUtil.isBlank(charsetName) ? Charset.defaultCharset() : Charset.forName(charsetName);
 	}
 	

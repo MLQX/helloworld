@@ -1,11 +1,11 @@
 package com.example.demo.hutool.core.lang;
 
-import cn.hutool.core.util.ArrayUtil;
-import cn.hutool.core.util.StrUtil;
-
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
+
+import com.example.demo.hutool.core.util.ArrayUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * {@link ParameterizedType} 接口实现，用于重新定义泛型类型

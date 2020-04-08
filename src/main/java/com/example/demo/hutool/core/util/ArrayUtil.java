@@ -1,15 +1,22 @@
 package com.example.demo.hutool.core.util;
 
-import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.collection.CollectionUtil;
-import cn.hutool.core.collection.IterUtil;
-import cn.hutool.core.exceptions.UtilException;
-import cn.hutool.core.lang.Editor;
-import cn.hutool.core.lang.Filter;
+import com.example.demo.hutool.core.collection.CollUtil;
+import com.example.demo.hutool.core.collection.CollectionUtil;
+import com.example.demo.hutool.core.collection.IterUtil;
+import com.example.demo.hutool.core.exceptions.UtilException;
+import com.example.demo.hutool.core.lang.Editor;
+import com.example.demo.hutool.core.lang.Filter;
 
 import java.lang.reflect.Array;
 import java.nio.ByteBuffer;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * 数组工具类

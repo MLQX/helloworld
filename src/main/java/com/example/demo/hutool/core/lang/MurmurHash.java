@@ -1,10 +1,10 @@
 package com.example.demo.hutool.core.lang;
 
-import cn.hutool.core.util.CharsetUtil;
-import cn.hutool.core.util.StrUtil;
-
 import java.io.Serializable;
 import java.nio.charset.Charset;
+
+import com.example.demo.hutool.core.util.CharsetUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * Murmur3 32bit、64bit、128bit 哈希算法实现<br>
@@ -18,7 +18,7 @@ import java.nio.charset.Charset;
  * @author looly,Simhash4J
  * @since 4.3.3
  */
-public class MurmurHash implements Serializable {
+public class MurmurHash implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	// Constants for 32 bit variant

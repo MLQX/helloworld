@@ -1,12 +1,12 @@
 package com.example.demo.hutool.core.swing;
 
-import cn.hutool.core.io.IORuntimeException;
-import cn.hutool.core.util.URLUtil;
-
-import java.awt.*;
+import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 import java.net.URI;
+
+import com.example.demo.hutool.core.io.IORuntimeException;
+import com.example.demo.hutool.core.util.URLUtil;
 
 /**
  * 桌面相关工具（平台相关）<br>

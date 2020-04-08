@@ -1,8 +1,8 @@
 package com.example.demo.hutool.core.lang;
 
-import cn.hutool.core.util.TypeUtil;
-
 import java.lang.reflect.Type;
+
+import com.example.demo.hutool.core.util.TypeUtil;
 
 /**
  * Type类型参考<br>

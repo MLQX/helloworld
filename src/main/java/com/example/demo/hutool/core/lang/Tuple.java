@@ -1,7 +1,7 @@
 package com.example.demo.hutool.core.lang;
 
-import cn.hutool.core.clone.CloneSupport;
-import cn.hutool.core.collection.ArrayIter;
+import com.example.demo.hutool.core.clone.CloneSupport;
+import com.example.demo.hutool.core.collection.ArrayIter;
 
 import java.io.Serializable;
 import java.util.Arrays;
@@ -14,7 +14,7 @@ import java.util.Iterator;
  * @author Looly
  *
  */
-public class Tuple extends CloneSupport<Tuple> implements Iterable<Object>, Serializable {
+public class Tuple extends CloneSupport<Tuple> implements Iterable<Object>, Serializable{
 	private static final long serialVersionUID = -7689304393482182157L;
 	
 	private final Object[] members;

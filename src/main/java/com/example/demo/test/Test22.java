@@ -1,7 +1,7 @@
 package com.example.demo.test;
 
 
-import cn.hutool.core.annotation.AnnotationUtil;
+import com.example.demo.hutool.core.annotation.AnnotationUtil;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 

@@ -1,6 +1,6 @@
 package com.example.demo.hutool.core.util;
 
-import cn.hutool.core.text.ASCIIStrCache;
+import com.example.demo.hutool.core.text.ASCIIStrCache;
 
 /**
  * 字符工具类<br>

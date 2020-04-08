@@ -1,6 +1,6 @@
 package com.example.demo.hutool.core.convert;
 
-import cn.hutool.core.util.StrUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * 将浮点数类型的number转换成英语的表达方式 <br>

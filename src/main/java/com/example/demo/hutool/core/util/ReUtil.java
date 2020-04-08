@@ -1,14 +1,19 @@
 package com.example.demo.hutool.core.util;
 
-import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.convert.Convert;
-import cn.hutool.core.exceptions.UtilException;
-import cn.hutool.core.lang.Holder;
-import cn.hutool.core.lang.PatternPool;
-import cn.hutool.core.lang.Validator;
-import cn.hutool.core.lang.func.Func1;
+import com.example.demo.hutool.core.collection.CollUtil;
+import com.example.demo.hutool.core.convert.Convert;
+import com.example.demo.hutool.core.exceptions.UtilException;
+import com.example.demo.hutool.core.lang.Holder;
+import com.example.demo.hutool.core.lang.PatternPool;
+import com.example.demo.hutool.core.lang.Validator;
+import com.example.demo.hutool.core.lang.func.Func1;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

@@ -1,9 +1,9 @@
 package com.example.demo.hutool.core.convert.impl;
 
-import cn.hutool.core.convert.AbstractConverter;
-import cn.hutool.core.util.BooleanUtil;
-
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import com.example.demo.hutool.core.convert.AbstractConverter;
+import com.example.demo.hutool.core.util.BooleanUtil;
 
 /**
  * {@link AtomicBoolean}转换器

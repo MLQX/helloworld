@@ -1,12 +1,12 @@
 package com.example.demo.hutool.core.codec;
 
-import cn.hutool.core.lang.Assert;
-import cn.hutool.core.util.CharUtil;
-import cn.hutool.core.util.StrUtil;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import com.example.demo.hutool.core.lang.Assert;
+import com.example.demo.hutool.core.util.CharUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * 莫尔斯电码的编码和解码实现<br>

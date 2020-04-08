@@ -1,8 +1,8 @@
 package com.example.demo.hutool.core.comparator;
 
-import cn.hutool.core.util.ArrayUtil;
-
 import java.util.Comparator;
+
+import com.example.demo.hutool.core.util.ArrayUtil;
 
 /**
  * 按照数组的顺序正序排列，数组的元素位置决定了对象的排序先后<br>

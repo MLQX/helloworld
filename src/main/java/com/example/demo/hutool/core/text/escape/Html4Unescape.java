@@ -1,7 +1,7 @@
 package com.example.demo.hutool.core.text.escape;
 
-import cn.hutool.core.text.replacer.LookupReplacer;
-import cn.hutool.core.text.replacer.ReplacerChain;
+import com.example.demo.hutool.core.text.replacer.LookupReplacer;
+import com.example.demo.hutool.core.text.replacer.ReplacerChain;
 
 /**
  * HTML4的UNESCAPE

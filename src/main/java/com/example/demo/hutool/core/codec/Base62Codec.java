@@ -1,9 +1,9 @@
 package com.example.demo.hutool.core.codec;
 
-import cn.hutool.core.util.ArrayUtil;
-
 import java.io.ByteArrayOutputStream;
 import java.io.Serializable;
+
+import com.example.demo.hutool.core.util.ArrayUtil;
 
 /**
  * Base62编码解码实现，常用于短URL<br>
@@ -12,7 +12,7 @@ import java.io.Serializable;
  * @author Looly, Sebastian Ruhleder, sebastian@seruco.io
  * @since 4.5.9
  */
-public class Base62Codec implements Serializable {
+public class Base62Codec implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	private static final int STANDARD_BASE = 256;

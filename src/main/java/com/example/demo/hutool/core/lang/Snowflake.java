@@ -1,7 +1,7 @@
 package com.example.demo.hutool.core.lang;
 
-import cn.hutool.core.date.SystemClock;
-import cn.hutool.core.util.StrUtil;
+import com.example.demo.hutool.core.date.SystemClock;
+import com.example.demo.hutool.core.util.StrUtil;
 
 import java.io.Serializable;
 import java.util.Date;

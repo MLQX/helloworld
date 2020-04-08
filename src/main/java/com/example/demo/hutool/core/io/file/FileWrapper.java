@@ -1,12 +1,12 @@
 package com.example.demo.hutool.core.io.file;
 
-import cn.hutool.core.io.FileUtil;
-import cn.hutool.core.util.CharsetUtil;
-
 import java.io.File;
 import java.io.Serializable;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
+
+import com.example.demo.hutool.core.io.FileUtil;
+import com.example.demo.hutool.core.util.CharsetUtil;
 
 /**
  * 文件包装器，扩展文件对象
@@ -14,7 +14,7 @@ import java.nio.charset.StandardCharsets;
  * @author Looly
  *
  */
-public class FileWrapper implements Serializable {
+public class FileWrapper implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	protected File file;

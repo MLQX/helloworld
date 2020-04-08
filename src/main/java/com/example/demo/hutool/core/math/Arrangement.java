@@ -1,12 +1,12 @@
 package com.example.demo.hutool.core.math;
 
-import cn.hutool.core.util.ArrayUtil;
-import cn.hutool.core.util.NumberUtil;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import com.example.demo.hutool.core.util.ArrayUtil;
+import com.example.demo.hutool.core.util.NumberUtil;
 
 /**
  * 排列A(n, m)<br>

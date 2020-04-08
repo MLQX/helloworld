@@ -1,6 +1,6 @@
 package com.example.demo.hutool.core.util;
 
-import cn.hutool.core.lang.MurmurHash;
+import com.example.demo.hutool.core.lang.MurmurHash;
 
 /**
  * Hash算法大全<br>

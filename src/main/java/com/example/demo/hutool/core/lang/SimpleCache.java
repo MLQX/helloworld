@@ -1,13 +1,13 @@
 package com.example.demo.hutool.core.lang;
 
-import cn.hutool.core.lang.func.Func0;
-
 import java.io.Serializable;
 import java.util.Map;
 import java.util.WeakHashMap;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock;
+
+import com.example.demo.hutool.core.lang.func.Func0;
 
 /**
  * 简单缓存，无超时实现，使用{@link WeakHashMap}实现缓存自动清理
@@ -16,7 +16,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock;
  * @param <K> 键类型
  * @param <V> 值类型
  */
-public class SimpleCache<K, V> implements Serializable {
+public class SimpleCache<K, V> implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	/** 池 */

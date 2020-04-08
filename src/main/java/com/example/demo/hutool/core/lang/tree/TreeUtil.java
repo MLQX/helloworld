@@ -1,9 +1,9 @@
 package com.example.demo.hutool.core.lang.tree;
 
-import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.lang.tree.parser.DefaultNodeParser;
-import cn.hutool.core.lang.tree.parser.NodeParser;
-import cn.hutool.core.util.ObjectUtil;
+import com.example.demo.hutool.core.collection.CollUtil;
+import com.example.demo.hutool.core.lang.tree.parser.DefaultNodeParser;
+import com.example.demo.hutool.core.lang.tree.parser.NodeParser;
+import com.example.demo.hutool.core.util.ObjectUtil;
 
 import java.util.ArrayList;
 import java.util.List;

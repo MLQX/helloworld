@@ -1,14 +1,14 @@
 package com.example.demo.hutool.core.swing.clipboard;
 
-import cn.hutool.core.thread.ThreadUtil;
-import cn.hutool.core.util.ObjectUtil;
-
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.ClipboardOwner;
 import java.awt.datatransfer.Transferable;
 import java.io.Closeable;
 import java.util.LinkedHashSet;
 import java.util.Set;
+
+import com.example.demo.hutool.core.thread.ThreadUtil;
+import com.example.demo.hutool.core.util.ObjectUtil;
 
 /**
  * 剪贴板监听

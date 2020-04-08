@@ -1,8 +1,8 @@
 package com.example.demo.hutool.core.io.watch.watchers;
 
-import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.io.watch.Watcher;
-import cn.hutool.core.lang.Chain;
+import com.example.demo.hutool.core.collection.CollUtil;
+import com.example.demo.hutool.core.io.watch.Watcher;
+import com.example.demo.hutool.core.lang.Chain;
 
 import java.nio.file.Path;
 import java.nio.file.WatchEvent;

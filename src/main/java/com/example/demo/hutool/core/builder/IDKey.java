@@ -12,7 +12,7 @@ import java.io.Serializable;
  * @author looly，Apache-Commons
  * @since 4.2.2
  */
-final class IDKey implements Serializable {
+final class IDKey implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	private final Object value;

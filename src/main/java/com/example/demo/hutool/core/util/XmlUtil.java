@@ -1,12 +1,12 @@
 package com.example.demo.hutool.core.util;
 
-import cn.hutool.core.bean.BeanUtil;
-import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.exceptions.UtilException;
-import cn.hutool.core.io.FileUtil;
-import cn.hutool.core.io.IoUtil;
-import cn.hutool.core.lang.Assert;
-import cn.hutool.core.map.MapUtil;
+import com.example.demo.hutool.core.bean.BeanUtil;
+import com.example.demo.hutool.core.collection.CollUtil;
+import com.example.demo.hutool.core.exceptions.UtilException;
+import com.example.demo.hutool.core.io.FileUtil;
+import com.example.demo.hutool.core.io.IoUtil;
+import com.example.demo.hutool.core.lang.Assert;
+import com.example.demo.hutool.core.map.MapUtil;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -409,7 +409,7 @@ public class XmlUtil {
 	 * @param omitXmlDeclaration 是否输出 xml Declaration
 	 * @since 5.1.2
 	 */
-	public static void transform(Source source, Result result, String charset, int indent, boolean omitXmlDeclaration) {
+	public static void transform(Source source, Result result, String charset, int indent,boolean omitXmlDeclaration) {
 		final TransformerFactory factory = TransformerFactory.newInstance();
 		try {
 			final Transformer xformer = factory.newTransformer();
@@ -699,7 +699,7 @@ public class XmlUtil {
 	 *
 	 * @param expression XPath表达式
 	 * @param source     资源，可以是Docunent、Node节点等
-	 * @param returnType 返回类型，{@link javax.xml.xpath.XPathConstants}
+	 * @param returnType 返回类型，{@link XPathConstants}
 	 * @return 匹配返回类型的值
 	 * @since 3.2.0
 	 */
@@ -871,7 +871,7 @@ public class XmlUtil {
 	 * @return XML格式的字符串
 	 * @since 5.1.2
 	 */
-	public static String mapToXmlStr(Map<?, ?> data, boolean omitXmlDeclaration) {
+	public static String mapToXmlStr(Map<?, ?> data,boolean omitXmlDeclaration) {
 		return toStr(mapToXml(data, "xml"),CharsetUtil.UTF_8,false,omitXmlDeclaration);
 	}
 
@@ -941,7 +941,7 @@ public class XmlUtil {
 	 * @return XML格式的字符串
 	 * @since 5.1.2
 	 */
-	public static String mapToXmlStr(Map<?, ?> data, String rootName, String namespace, String charset, boolean isPretty, boolean omitXmlDeclaration) {
+	public static String mapToXmlStr(Map<?, ?> data, String rootName, String namespace, String charset,boolean isPretty, boolean omitXmlDeclaration) {
 		return toStr(mapToXml(data, rootName, namespace), charset, isPretty, omitXmlDeclaration);
 	}
 

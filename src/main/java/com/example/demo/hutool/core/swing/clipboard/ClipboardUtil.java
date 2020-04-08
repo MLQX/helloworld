@@ -1,10 +1,16 @@
 package com.example.demo.hutool.core.swing.clipboard;
 
-import cn.hutool.core.exceptions.UtilException;
-
-import java.awt.*;
-import java.awt.datatransfer.*;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.ClipboardOwner;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.StringSelection;
+import java.awt.datatransfer.Transferable;
+import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.IOException;
+
+import com.example.demo.hutool.core.exceptions.UtilException;
 
 /**
  * 系统剪贴板工具类

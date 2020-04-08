@@ -1,9 +1,14 @@
 package com.example.demo.hutool.core.comparator;
 
-import cn.hutool.core.lang.Chain;
-
 import java.io.Serializable;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.BitSet;
+import java.util.Comparator;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Objects;
+
+import com.example.demo.hutool.core.lang.Chain;
 
 /**
  * 比较器链。此链包装了多个比较器，最终比较结果按照比较器顺序综合多个比较器结果。<br>
@@ -58,7 +63,7 @@ public class ComparatorChain<E> implements Chain<Comparator<E>, ComparatorChain<
 	 * 构造，使用已有的比较器列表
 	 * 
 	 * @param list 比较器列表
-	 * @see #ComparatorChain(List, BitSet)
+	 * @see #ComparatorChain(List,BitSet)
 	 */
 	public ComparatorChain(final List<Comparator<E>> list) {
 		this(list, new BitSet(list.size()));

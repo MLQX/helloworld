@@ -1,12 +1,12 @@
 package com.example.demo.hutool.core.lang;
 
-import cn.hutool.core.util.RandomUtil;
-import cn.hutool.core.util.StrUtil;
-
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.util.Random;
+
+import com.example.demo.hutool.core.util.RandomUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * 提供通用唯一识别码（universally unique identifier）（UUID）实现，UUID表示一个128位的值。<br>

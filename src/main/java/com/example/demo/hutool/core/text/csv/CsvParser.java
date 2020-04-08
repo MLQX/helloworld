@@ -1,17 +1,22 @@
 package com.example.demo.hutool.core.text.csv;
 
-import cn.hutool.core.io.IORuntimeException;
-import cn.hutool.core.io.IoUtil;
-import cn.hutool.core.text.StrBuilder;
-import cn.hutool.core.util.CharUtil;
-import cn.hutool.core.util.ObjectUtil;
-import cn.hutool.core.util.StrUtil;
-
 import java.io.Closeable;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.Serializable;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+
+import com.example.demo.hutool.core.io.IORuntimeException;
+import com.example.demo.hutool.core.io.IoUtil;
+import com.example.demo.hutool.core.text.StrBuilder;
+import com.example.demo.hutool.core.util.CharUtil;
+import com.example.demo.hutool.core.util.ObjectUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * CSV行解析器，参考：FastCSV

@@ -1,16 +1,16 @@
 package com.example.demo.hutool.core.collection;
 
-import cn.hutool.core.bean.BeanUtil;
-import cn.hutool.core.comparator.PinyinComparator;
-import cn.hutool.core.comparator.PropertyComparator;
-import cn.hutool.core.convert.Convert;
-import cn.hutool.core.convert.ConverterRegistry;
-import cn.hutool.core.exceptions.UtilException;
-import cn.hutool.core.lang.Editor;
-import cn.hutool.core.lang.Filter;
-import cn.hutool.core.lang.Matcher;
-import cn.hutool.core.map.MapUtil;
-import cn.hutool.core.util.*;
+import com.example.demo.hutool.core.bean.BeanUtil;
+import com.example.demo.hutool.core.comparator.PinyinComparator;
+import com.example.demo.hutool.core.comparator.PropertyComparator;
+import com.example.demo.hutool.core.convert.Convert;
+import com.example.demo.hutool.core.convert.ConverterRegistry;
+import com.example.demo.hutool.core.exceptions.UtilException;
+import com.example.demo.hutool.core.lang.Editor;
+import com.example.demo.hutool.core.lang.Filter;
+import com.example.demo.hutool.core.lang.Matcher;
+import com.example.demo.hutool.core.map.MapUtil;
+import com.example.demo.hutool.core.util.*;
 
 import java.lang.reflect.Type;
 import java.util.*;

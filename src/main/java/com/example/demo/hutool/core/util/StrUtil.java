@@ -1,23 +1,27 @@
 package com.example.demo.hutool.core.util;
 
-import cn.hutool.core.comparator.VersionComparator;
-import cn.hutool.core.convert.Convert;
-import cn.hutool.core.lang.Assert;
-import cn.hutool.core.lang.Matcher;
-import cn.hutool.core.lang.func.Func1;
-import cn.hutool.core.text.StrBuilder;
-import cn.hutool.core.text.StrFormatter;
-import cn.hutool.core.text.StrSpliter;
-import cn.hutool.core.text.TextSimilarity;
-
 import java.io.StringReader;
 import java.io.StringWriter;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.text.MessageFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 import java.util.regex.Pattern;
+
+import com.example.demo.hutool.core.comparator.VersionComparator;
+import com.example.demo.hutool.core.convert.Convert;
+import com.example.demo.hutool.core.lang.Assert;
+import com.example.demo.hutool.core.lang.Matcher;
+import com.example.demo.hutool.core.lang.func.Func1;
+import com.example.demo.hutool.core.text.StrBuilder;
+import com.example.demo.hutool.core.text.StrFormatter;
+import com.example.demo.hutool.core.text.StrSpliter;
+import com.example.demo.hutool.core.text.TextSimilarity;
 
 /**
  * 字符串工具类

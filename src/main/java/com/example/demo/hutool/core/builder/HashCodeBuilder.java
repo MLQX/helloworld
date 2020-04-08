@@ -1,14 +1,14 @@
 package com.example.demo.hutool.core.builder;
 
-import cn.hutool.core.lang.Assert;
-import cn.hutool.core.util.ArrayUtil;
-
 import java.lang.reflect.AccessibleObject;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
+
+import com.example.demo.hutool.core.lang.Assert;
+import com.example.demo.hutool.core.util.ArrayUtil;
 
 /**
  * <p>
@@ -167,7 +167,7 @@ public class HashCodeBuilder implements Builder<Integer> {
      *            Collection of String field names to exclude from use in calculation of hash code
      */
     private static void reflectionAppend(final Object object, final Class<?> clazz, final HashCodeBuilder builder, final boolean useTransients,
-                                         final String[] excludeFields) {
+            final String[] excludeFields) {
         if (isRegistered(object)) {
             return;
         }
@@ -331,7 +331,7 @@ public class HashCodeBuilder implements Builder<Integer> {
      * @since 2.0
      */
     public static <T> int reflectionHashCode(final int initialNonZeroOddNumber, final int multiplierNonZeroOddNumber, final T object,
-                                             final boolean testTransients, final Class<? super T> reflectUpToClass, final String... excludeFields) {
+            final boolean testTransients, final Class<? super T> reflectUpToClass, final String... excludeFields) {
 
         if (object == null) {
             throw new IllegalArgumentException("The object to build a hash code for must not be null");

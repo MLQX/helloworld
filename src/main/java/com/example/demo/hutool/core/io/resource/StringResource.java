@@ -1,12 +1,16 @@
 package com.example.demo.hutool.core.io.resource;
 
-import cn.hutool.core.io.IORuntimeException;
-import cn.hutool.core.io.IoUtil;
-import cn.hutool.core.util.CharsetUtil;
-
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
+import java.io.Serializable;
+import java.io.StringReader;
 import java.net.URL;
 import java.nio.charset.Charset;
+
+import com.example.demo.hutool.core.io.IORuntimeException;
+import com.example.demo.hutool.core.io.IoUtil;
+import com.example.demo.hutool.core.util.CharsetUtil;
 
 /**
  * 字符串资源，字符串做为资源

@@ -1,22 +1,27 @@
 package com.example.demo.hutool.core.util;
 
-import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.date.DateField;
-import cn.hutool.core.date.DateTime;
-import cn.hutool.core.date.DateUtil;
-import cn.hutool.core.exceptions.UtilException;
-import cn.hutool.core.lang.UUID;
-import cn.hutool.core.lang.WeightRandom;
-import cn.hutool.core.lang.WeightRandom.WeightObj;
-
-import java.awt.*;
+import java.awt.Color;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Date;
+import java.util.LinkedHashSet;
 import java.util.List;
-import java.util.*;
+import java.util.Random;
+import java.util.Set;
 import java.util.concurrent.ThreadLocalRandom;
+
+import com.example.demo.hutool.core.collection.CollUtil;
+import com.example.demo.hutool.core.date.DateField;
+import com.example.demo.hutool.core.date.DateTime;
+import com.example.demo.hutool.core.date.DateUtil;
+import com.example.demo.hutool.core.exceptions.UtilException;
+import com.example.demo.hutool.core.lang.UUID;
+import com.example.demo.hutool.core.lang.WeightRandom;
+import com.example.demo.hutool.core.lang.WeightRandom.WeightObj;
 
 /**
  * 随机工具类

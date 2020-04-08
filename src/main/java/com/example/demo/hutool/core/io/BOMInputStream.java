@@ -1,10 +1,10 @@
 package com.example.demo.hutool.core.io;
 
-import cn.hutool.core.util.CharsetUtil;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PushbackInputStream;
+
+import com.example.demo.hutool.core.util.CharsetUtil;
 
 /**
  * 读取带BOM头的流内容，<code>getCharset()</code>方法调用后会得到BOM头的编码，且会去除BOM头<br>

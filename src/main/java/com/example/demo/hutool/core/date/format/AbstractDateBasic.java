@@ -8,7 +8,7 @@ public abstract class AbstractDateBasic implements DateBasic, Serializable {
 	private static final long serialVersionUID = 6333136319870641818L;
 	
 	/** The pattern */
-	protected final String pattern;
+	protected final  String pattern;
 	/** The time zone. */
 	protected final TimeZone timeZone;
 	/** The locale. */

@@ -1,11 +1,11 @@
 package com.example.demo.hutool.core.math;
 
-import cn.hutool.core.util.NumberUtil;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import com.example.demo.hutool.core.util.NumberUtil;
 
 /**
  * 组合，即C(n, m)<br>

@@ -1,12 +1,12 @@
 package com.example.demo.hutool.core.io.resource;
 
-import cn.hutool.core.io.IORuntimeException;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.nio.charset.Charset;
+
+import com.example.demo.hutool.core.io.IORuntimeException;
 
 /**
  * 资源接口定义<br>

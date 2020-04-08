@@ -1,13 +1,13 @@
 package com.example.demo.hutool.core.io.resource;
 
-import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.collection.EnumerationIter;
-import cn.hutool.core.io.FileUtil;
-import cn.hutool.core.io.IORuntimeException;
-import cn.hutool.core.util.CharsetUtil;
-import cn.hutool.core.util.ClassLoaderUtil;
-import cn.hutool.core.util.StrUtil;
-import cn.hutool.core.util.URLUtil;
+import com.example.demo.hutool.core.collection.CollUtil;
+import com.example.demo.hutool.core.collection.EnumerationIter;
+import com.example.demo.hutool.core.io.FileUtil;
+import com.example.demo.hutool.core.io.IORuntimeException;
+import com.example.demo.hutool.core.util.CharsetUtil;
+import com.example.demo.hutool.core.util.ClassLoaderUtil;
+import com.example.demo.hutool.core.util.StrUtil;
+import com.example.demo.hutool.core.util.URLUtil;
 
 import java.io.BufferedReader;
 import java.io.IOException;

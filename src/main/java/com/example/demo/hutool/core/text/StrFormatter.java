@@ -1,7 +1,7 @@
 package com.example.demo.hutool.core.text;
 
-import cn.hutool.core.util.ArrayUtil;
-import cn.hutool.core.util.StrUtil;
+import com.example.demo.hutool.core.util.ArrayUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * 字符串格式化工具

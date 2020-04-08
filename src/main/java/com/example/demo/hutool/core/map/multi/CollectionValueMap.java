@@ -1,11 +1,11 @@
 package com.example.demo.hutool.core.map.multi;
 
-import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.map.MapWrapper;
-
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+
+import com.example.demo.hutool.core.collection.CollUtil;
+import com.example.demo.hutool.core.map.MapWrapper;
 
 /**
  * 值作为集合的Map实现，通过调用putValue可以在相同key时加入多个值，多个值用集合表示

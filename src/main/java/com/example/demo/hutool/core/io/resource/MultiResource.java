@@ -1,8 +1,5 @@
 package com.example.demo.hutool.core.io.resource;
 
-import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.io.IORuntimeException;
-
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.Serializable;
@@ -12,6 +9,9 @@ import java.util.Collection;
 import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 import java.util.List;
+
+import com.example.demo.hutool.core.collection.CollUtil;
+import com.example.demo.hutool.core.io.IORuntimeException;
 
 /**
  * 多资源组合资源<br>

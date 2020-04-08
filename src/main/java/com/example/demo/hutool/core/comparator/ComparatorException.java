@@ -1,13 +1,13 @@
 package com.example.demo.hutool.core.comparator;
 
-import cn.hutool.core.exceptions.ExceptionUtil;
-import cn.hutool.core.util.StrUtil;
+import com.example.demo.hutool.core.exceptions.ExceptionUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * 比较异常
  * @author xiaoleilu
  */
-public class ComparatorException extends RuntimeException {
+public class ComparatorException extends RuntimeException{
 	private static final long serialVersionUID = 4475602435485521971L;
 
 	public ComparatorException(Throwable e) {

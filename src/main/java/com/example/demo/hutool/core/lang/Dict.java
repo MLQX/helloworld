@@ -1,15 +1,19 @@
 package com.example.demo.hutool.core.lang;
 
-import cn.hutool.core.bean.BeanUtil;
-import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.convert.Convert;
-import cn.hutool.core.getter.BasicTypeGetter;
+import com.example.demo.hutool.core.bean.BeanUtil;
+import com.example.demo.hutool.core.collection.CollUtil;
+import com.example.demo.hutool.core.convert.Convert;
+import com.example.demo.hutool.core.getter.BasicTypeGetter;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.sql.Time;
 import java.sql.Timestamp;
-import java.util.*;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
  * 字典对象，扩充了HashMap中的方法

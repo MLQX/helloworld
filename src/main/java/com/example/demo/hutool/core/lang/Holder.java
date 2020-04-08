@@ -1,6 +1,6 @@
 package com.example.demo.hutool.core.lang;
 
-import cn.hutool.core.lang.mutable.MutableObj;
+import com.example.demo.hutool.core.lang.mutable.MutableObj;
 
 /**
  * 为不可变的对象引用提供一个可变的包装，在java中支持引用传递。
@@ -18,7 +18,7 @@ public final class Holder<T> extends MutableObj<T>{
 	 * @param value 值，不能为空
 	 * @return Holder
 	 */
-	public static <T> Holder<T> of(T value) throws NullPointerException {
+	public static <T> Holder<T> of(T value) throws NullPointerException{
 		if(null == value){
 			throw new NullPointerException("Holder can not hold a null value!");
 		}

@@ -1,14 +1,14 @@
 package com.example.demo.hutool.core.net;
 
-import cn.hutool.core.util.CharUtil;
-import cn.hutool.core.util.HexUtil;
-
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.Serializable;
 import java.nio.charset.Charset;
 import java.util.BitSet;
+
+import com.example.demo.hutool.core.util.CharUtil;
+import com.example.demo.hutool.core.util.HexUtil;
 
 /**
  * URL编码，数据内容的类型是 application/x-www-form-urlencoded。
@@ -23,7 +23,7 @@ import java.util.BitSet;
  * @author looly,
  *
  */
-public class URLEncoder implements Serializable {
+public class URLEncoder implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	// --------------------------------------------------------------------------------------------- Static method start

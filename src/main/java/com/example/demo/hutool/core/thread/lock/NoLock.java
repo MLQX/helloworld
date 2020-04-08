@@ -10,7 +10,7 @@ import java.util.concurrent.locks.Lock;
  * @author looly
  *@since 4.3.1
  */
-public class NoLock implements Lock {
+public class NoLock implements Lock{
 
 	@Override
 	public void lock() {

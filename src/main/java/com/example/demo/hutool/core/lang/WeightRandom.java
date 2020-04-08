@@ -1,13 +1,13 @@
 package com.example.demo.hutool.core.lang;
 
-import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.map.MapUtil;
-import cn.hutool.core.util.RandomUtil;
-
 import java.io.Serializable;
 import java.util.Random;
 import java.util.SortedMap;
 import java.util.TreeMap;
+
+import com.example.demo.hutool.core.collection.CollUtil;
+import com.example.demo.hutool.core.map.MapUtil;
+import com.example.demo.hutool.core.util.RandomUtil;
 
 /**
  * 权重随机算法实现<br>

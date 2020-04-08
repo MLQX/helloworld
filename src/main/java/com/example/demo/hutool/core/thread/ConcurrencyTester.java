@@ -1,6 +1,6 @@
 package com.example.demo.hutool.core.thread;
 
-import cn.hutool.core.date.TimeInterval;
+import com.example.demo.hutool.core.date.TimeInterval;
 
 /**
  * 高并发测试工具类

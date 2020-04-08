@@ -1,8 +1,8 @@
 package com.example.demo.hutool.core.text.csv;
 
-import cn.hutool.core.util.CharUtil;
-
 import java.io.Serializable;
+
+import com.example.demo.hutool.core.util.CharUtil;
 
 /**
  * CSV写出配置项

@@ -1,7 +1,7 @@
 package com.example.demo.hutool.core.date;
 
-import cn.hutool.core.convert.NumberChineseFormatter;
-import cn.hutool.core.util.StrUtil;
+import com.example.demo.hutool.core.convert.NumberChineseFormatter;
+import com.example.demo.hutool.core.util.StrUtil;
 
 import java.util.ArrayList;
 import java.util.Date;

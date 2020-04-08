@@ -1,13 +1,13 @@
 package com.example.demo.hutool.core.io.resource;
 
-import cn.hutool.core.io.FileUtil;
-import cn.hutool.core.lang.Assert;
-import cn.hutool.core.util.ClassUtil;
-import cn.hutool.core.util.ObjectUtil;
-import cn.hutool.core.util.StrUtil;
-import cn.hutool.core.util.URLUtil;
-
 import java.net.URL;
+
+import com.example.demo.hutool.core.io.FileUtil;
+import com.example.demo.hutool.core.lang.Assert;
+import com.example.demo.hutool.core.util.ClassUtil;
+import com.example.demo.hutool.core.util.ObjectUtil;
+import com.example.demo.hutool.core.util.StrUtil;
+import com.example.demo.hutool.core.util.URLUtil;
 
 /**
  * ClassPath单一资源访问类<br>

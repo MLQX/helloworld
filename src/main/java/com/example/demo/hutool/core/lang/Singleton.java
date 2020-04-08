@@ -1,12 +1,12 @@
 package com.example.demo.hutool.core.lang;
 
-import cn.hutool.core.util.ArrayUtil;
-import cn.hutool.core.util.ClassUtil;
-import cn.hutool.core.util.ReflectUtil;
-import cn.hutool.core.util.StrUtil;
-
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+
+import com.example.demo.hutool.core.util.ArrayUtil;
+import com.example.demo.hutool.core.util.ClassUtil;
+import com.example.demo.hutool.core.util.ReflectUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * 单例类<br>

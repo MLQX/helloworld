@@ -1,13 +1,13 @@
 package com.example.demo.hutool.core.clone;
 
-import cn.hutool.core.exceptions.ExceptionUtil;
-import cn.hutool.core.util.StrUtil;
+import com.example.demo.hutool.core.exceptions.ExceptionUtil;
+import com.example.demo.hutool.core.util.StrUtil;
 
 /**
  * 克隆异常
  * @author xiaoleilu
  */
-public class CloneRuntimeException extends RuntimeException {
+public class CloneRuntimeException extends RuntimeException{
 	private static final long serialVersionUID = 6774837422188798989L;
 
 	public CloneRuntimeException(Throwable e) {
