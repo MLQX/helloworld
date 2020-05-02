@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import com.example.demo.pojo.User;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Date;
 
-@RestController
+@Controller
 @Slf4j
 public class UserController {
 
@@ -55,6 +56,22 @@ public class UserController {
         //return u;
         log.debug(String.valueOf(user));
         return null;
+    }
+
+
+    @RequestMapping("/gd")
+    public String gd(){
+        //
+        //User u = new User();
+        //u.setAge(18);
+        //u.setCreateTime(new Date());
+        ////u.setEmail("549918019@qq.com");
+        //u.setId(1L);
+        //u.setName("张三");
+        //u.setManagerId(12L);
+        //return u;
+        //log.debug(String.valueOf(user));
+        return "gd";
     }
 
 }
