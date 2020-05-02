@@ -40,7 +40,7 @@ public class Test57 {
         String encryptHex = aes.encryptHex(content);
         //解密为字符串
         String decryptStr = aes.decryptStr(encryptHex, CharsetUtil.UTF_8);
-        Console.log("解密后的字符串为："+decryptStr );
+        Console.log("解密后的字符串为："+decryptStr);
 
     }
 
