@@ -24,7 +24,7 @@ public class DistributionController {
 
     private  static final long INTERVAL = 5L; // 5 秒
 
-    private String lockKey = "lockKey";
+    private final String lockKey = "lockKey";
     @GetMapping("/reduce_stock")
     public String reduceStock(){
         String uuid = UUID.randomUUID().toString();  //防止线程乱序
