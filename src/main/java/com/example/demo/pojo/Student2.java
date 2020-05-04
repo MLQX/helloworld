@@ -27,7 +27,7 @@ public class Student2 {
         this.dateOfBirth = dateOfBirth;
     }
 
-    // 标准 getters & setters
+
 }
 
 

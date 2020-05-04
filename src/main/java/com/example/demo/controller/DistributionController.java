@@ -54,7 +54,8 @@ public class DistributionController {
 
 
             // 如果
-            Boolean lockValue = redisTemplate.opsForValue().setIfAbsent(lockKey, uuid, INTERVAL, TimeUnit.SECONDS);
+            //Boolean lockValue = redisTemplate.opsForValue().setIfAbsent(lockKey, uuid, INTERVAL, TimeUnit.SECONDS);
+            Boolean lockValue = redisTemplate.opsForValue().setIfAbsent(lockKey, uuid);
 
             if (!lockValue) {
                 //未获得锁，返回错误码，让客户端稍后再试
