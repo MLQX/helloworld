@@ -14,7 +14,7 @@ import java.io.IOException;
 @WebFilter(urlPatterns = "*")
 @Component
 @Slf4j
-public class CorsFilter implements Filter {
+public class HeaderInfoFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
 
@@ -22,7 +22,7 @@ public class CorsFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain) throws IOException, ServletException {
-        log.debug("CorsFilter在过滤");
+        log.debug("HeaderInfoFilter在过滤");
         HttpServletRequest httpRequest = (HttpServletRequest)request;
         HttpServletResponse httpResponse = (HttpServletResponse) response;
         httpResponse.setCharacterEncoding("UTF-8");

@@ -60,8 +60,7 @@ public class MyWebMvcConfigurer implements WebMvcConfigurer {
         registry.addViewController("/toLogin").setViewName("login");
 
     }
-
-    //TODO 看看咋用
+    
     @Override
     public void addReturnValueHandlers(List<HandlerMethodReturnValueHandler> handlers) {
         handlers.add(new HandlerMethodReturnValueHandler() {
