@@ -1,7 +1,6 @@
 package com.example.demo.test;
 
-import cn.hutool.core.date.DateTime;
-import cn.hutool.core.date.DateUtil;
+import cn.hutool.core.date.*;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
@@ -84,6 +83,71 @@ public class Test53 {
 
         DateTime dateTime = DateUtil.endOfMonth(date8);
         DateTime dateTime2 = DateUtil.beginOfMonth(date8);
+
+
+
+
+    }
+
+    @Test
+    public void test2() {
+        //获取今天到月末的天数
+        long between = DateUtil.between(DateUtil.date(), DateUtil.endOfMonth(DateUtil.date()), DateUnit.DAY);
+        System.out.println(between);
+
+
+        //获取当前时间的String
+        String now = DateUtil.now();
+        System.out.println(now);
+
+
+        TimeInterval timer = DateUtil.timer();
+        String today = DateUtil.today();
+        System.out.println(today); //获取当前日期
+
+        int i = DateUtil.ageOfNow(DateUtil.parse("1995-03-12"));
+        System.out.println(i);
+
+        int i2 = DateUtil.ageOfNow(DateUtil.parse("1994/03/12"));
+        System.out.println(i2);
+
+        int i3 = DateUtil.ageOfNow(DateUtil.parse("19960312"));
+        System.out.println(i3);
+
+        String s = DateUtil.formatTime(DateUtil.date());//获取当前的系统时间
+        System.out.println(s);
+
+
+        String chineseZodiac = DateUtil.getChineseZodiac(1995);  //生肖
+        System.out.println(chineseZodiac);
+
+        DateTime time = DateUtil.beginOfWeek(DateUtil.date()); //获取这个星期的开始时刻
+        System.out.println(time);
+
+
+        StopWatch stopWatch = DateUtil.createStopWatch();
+        DateTime ceiling = DateUtil.ceiling(new Date(), DateField.HOUR);
+        System.out.println(DateUtil.format(ceiling,"yyyy-MM-dd HH:mm:ss"));
+
+        DateTime ceiling2 = DateUtil.ceiling(new Date(), DateField.SECOND);
+        System.out.println(DateUtil.format(ceiling2,"yyyy-MM-dd HH:mm:ss"));
+
+
+        //年的最后一刻
+        DateTime ceiling3 = DateUtil.ceiling(new Date(), DateField.YEAR);
+        System.out.println(DateUtil.format(ceiling3,"yyyy-MM-dd HH:mm:ss"));
+
+
+        //月的最后一刻
+        DateTime ceiling4 = DateUtil.ceiling(new Date(), DateField.MONTH);
+        System.out.println(DateUtil.format(ceiling4,"yyyy-MM-dd HH:mm:ss"));
+
+
+        System.out.println(new Date());
+        System.out.println("hello");
+
+
+
 
 
     }
